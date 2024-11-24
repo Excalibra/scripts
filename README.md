@@ -30,7 +30,7 @@ This section involves interdisciplinary and basic research of humanities and soc
 <pre><code>ruby -e "$(curl -fsSL https://ghp.ci/https://raw.githubusercontent.com/Excalibra/scripts/main/d-ruby/get_chita_news.rb)"
 </code></pre>
 
-<p>One-click generate global information reports <a href="#">Text version</a></p>
+<p>One-click generate global information reports <a href="https://dev.to/excalibra/python-original-created-a-web-scraper-for-worldmeterinfo-25c4">Text version</a></p>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_worldometers.py)"
 </code></pre>
@@ -38,7 +38,7 @@ This section involves interdisciplinary and basic research of humanities and soc
 <p>One-click collect the top posts on Reddit </p>
 <pre><code>python3 -c "$(curl -fsSL https://raw.githubusercontent.com/Excalibra/scripts/blob/main/d-python/reddit_data_demo.py)"</code></pre>
 
-<p>Collect 90 job posts and salary details HH.ru <a href="">Text version</a></p>
+<p>Collect 90 job posts and salary details HH.ru <a href="https://dev.to/excalibra/python-orighinal-sozdal-diemo-vieb-skrieipiera-dlia-saita-vakansii-46if">Text version</a></p>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/hh.ru_demo.py)"</code></pre>
 
