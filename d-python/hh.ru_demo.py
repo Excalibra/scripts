@@ -4,22 +4,19 @@ import json
 from openpyxl import Workbook
 from datetime import datetime
 
-# Your existing get_citycode and get_job_list functions should already be defined in your script.
-# Make sure they are present in the script or imported from another module.
-
-# For example, let's assume this is part of your script:
+# Function to get city code
 def get_citycode(city_name):
     response = requests.get('https://api.hh.ru/areas')
     city_data = response.json()
     
-    # Ищем в каждом регионе города
+    # Find city code
     for region in city_data:
-        # Если город найден в регионе, возвращаем его ID
         for area in region.get('areas', []):
             if area['name'] == city_name:
                 return area['id']
     return None
 
+# Function to get a list of job posts (90 posts across 3 pages)
 def get_job_list(keywords, city_name):
     city_code = get_citycode(city_name)
     if city_code is None:
@@ -27,24 +24,29 @@ def get_job_list(keywords, city_name):
         return []
 
     url = "https://api.hh.ru/vacancies"
-    params = {
-        'text': keywords,  # Ключевые слова для поиска вакансий
-        'area': city_code,  # ID города
-        'page': 0,  # Стартовая страница
-        'per_page': 10,  # Количество вакансий на странице
-    }
+    job_listings = []
 
-    response = requests.get(url, params=params)
-    data = response.json()
+    for page in range(3):  # Collect data from pages 0, 1, and 2
+        params = {
+            'text': keywords,  # Keywords for job search
+            'area': city_code,  # City ID
+            'page': page,  # Current page
+            'per_page': 30,  # Number of jobs per page (max 100)
+        }
 
-    return data['items']
+        response = requests.get(url, params=params)
+        data = response.json()
 
-# Your DataToExcel class remains the same.
+        if 'items' in data:
+            job_listings.extend(data['items'])  # Add job listings from current page
 
+    return job_listings
+
+# Class to save data to Excel
 class DataToExcel:
     @staticmethod
     def save_to_excel(workbook, hhru_json):
-        # Load the hh.ru JSON data
+        # Load the JSON data
         with open(hhru_json, 'r', encoding='utf-8') as f:
             hhru_json = json.load(f)
 
@@ -95,7 +97,7 @@ class DataToExcel:
         print(f"Job listings have been saved to: {save_xlsx}")
 
 
-# Example function that saves the job data and calls the Excel export function
+# Function to save HH.ru data to Excel
 def save_hhru_data_to_excel():
     # Ensure get_job_list is available here.
     job_listings = get_job_list("разработчик, кибербезопасность, IT", "Москва")
