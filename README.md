@@ -49,7 +49,7 @@ This section involves interdisciplinary and basic research of humanities and soc
 
 Prerequisite: Before starting, first copy and run the following command to install the pip package. Data involving Stanford University’s language model [stanza](https://stanfordnlp.github.io/stanza) requires an external network connection.
 
-<pre><code>pip3 install --no-cache-dir -r #
+<pre><code>pip3 install --no-cache-dir -r https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-txt/requirements.txt
 </code></pre>
 
 <h3>Hot Search Collection and Analysis for #1, #2, #3</h3>
