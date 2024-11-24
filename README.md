@@ -38,9 +38,9 @@ This section involves interdisciplinary and basic research of humanities and soc
 <p>One-click collect the top five answers # </p>
 <pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
 
-<p>Collect 90 job posts and salary details # <a href="#">Text version</a></p>
+<p>Collect 90 job posts and salary details # <a href="">Text version</a></p>
 
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+<pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/hh.ru_demo.py)"</code></pre>
 
 </details>
 
