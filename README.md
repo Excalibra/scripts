@@ -35,8 +35,8 @@ This section involves interdisciplinary and basic research of humanities and soc
 <pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_worldometers.py)"
 </code></pre>
 
-<p>One-click collect the top five answers # </p>
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+<p>One-click collect the top posts on Reddit </p>
+<pre><code>python3 -c "$(curl -fsSL https://raw.githubusercontent.com/Excalibra/scripts/blob/main/d-python/reddit_data_demo.py)"</code></pre>
 
 <p>Collect 90 job posts and salary details HH.ru <a href="">Text version</a></p>
 
