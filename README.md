@@ -52,7 +52,7 @@ Prerequisite: Before starting, first copy and run the following command to insta
 <pre><code>pip3 install --no-cache-dir -r https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-txt/requirements.txt
 </code></pre>
 
-<h3>(Draft) Hot Search Collection and Analysis/h3>
+<h3>Draft - Hot Search Collection and Analysis/h3>
 
 <p>One-click collect today’s hot searches <a href="#">Text version</a> (NLP: Stanza)</p>
 
