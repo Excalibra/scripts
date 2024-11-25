@@ -52,7 +52,7 @@ Prerequisite: Before starting, first copy and run the following command to insta
 <pre><code>pip3 install --no-cache-dir -r https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-txt/requirements.txt
 </code></pre>
 
-<h3>Hot Search Collection and Analysis for #1, #2, #3</h3>
+<h3>Draft - Hot Search Collection and Analysis for #1, #2, #3</h3>
 
 <p>One-click collect today’s hot searches from #1, #2, and #3 <a href="#">Text version</a> (NLP: Stanza)</p>
 
@@ -66,7 +66,7 @@ Prerequisite: Before starting, first copy and run the following command to insta
 <li>Part-of-speech analysis; highlights words likely to have guiding or implanted awareness components, such as excessive use of attributive and adverbial phrases, which are often promotional in nature.</li>
 </ul>
 
-<p>X/Twitter has the most noise in automated categorization, with low informational value, large amounts of superficial content, and higher distortion. The hot search headlines across platforms also have unmarked rumor components, so it's best to use the <a href="#">National Rumor Refutation Platform</a> for verification. Despite its heavy entertainment focus, X's social media model allows rapid dissemination of information when social events trend, sparking public attention and discussion.</p>
+<p># has the most noise in automated categorization, with low informational value, large amounts of superficial content, and higher distortion. The hot search headlines across platforms also have unmarked rumor components, so it's best to use the <a href="#">National Rumor Refutation Platform</a> for verification. Despite its heavy entertainment focus, # social media model allows rapid dissemination of information when social events trend, sparking public attention and discussion.</p>
 
 <p>Recommended Papers:</p>
 
