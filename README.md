@@ -66,7 +66,7 @@ Prerequisite: Before starting, first copy and run the following command to insta
 <li>Part-of-speech analysis; highlights words likely to have guiding or implanted awareness components, such as excessive use of attributive and adverbial phrases, which are often promotional in nature.</li>
 </ul>
 
-<p>Weibo has the most noise in automated categorization, with low informational value, large amounts of superficial content, and higher distortion. The hot search headlines across platforms also have unmarked rumor components, so it's best to use the <a href="#">National Rumor Refutation Platform</a> for verification. Despite its heavy entertainment focus, Weibo's social media model allows rapid dissemination of information when social events trend, sparking public attention and discussion.</p>
+<p>X/Twitter has the most noise in automated categorization, with low informational value, large amounts of superficial content, and higher distortion. The hot search headlines across platforms also have unmarked rumor components, so it's best to use the <a href="#">National Rumor Refutation Platform</a> for verification. Despite its heavy entertainment focus, X's social media model allows rapid dissemination of information when social events trend, sparking public attention and discussion.</p>
 
 <p>Recommended Papers:</p>
 
