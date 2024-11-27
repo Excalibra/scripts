@@ -1,0 +1,354 @@
+$
+0  
+1  
+2  
+3  
+4  
+5  
+6  
+7  
+8  
+9  
+?  
+_  
+“ (left quotation mark)  
+” (right quotation mark)  
+、 (enumeration comma)  
+。 (period)  
+《 (left book title mark)  
+》 (right book title mark)  
+one  
+some  
+why  
+everything  
+one instance  
+on one hand  
+once  
+since  
+the same  
+generally  
+in an instant  
+in case  
+above  
+up and down  
+below  
+not  
+not only  
+not just  
+not merely  
+not only  
+not outside  
+not as good as  
+might as well  
+not entirely  
+not necessarily  
+cannot  
+not afraid  
+not only  
+not possible  
+not restricted  
+unexpectedly  
+not so  
+not comparable  
+not otherwise  
+not only  
+not solely  
+no matter  
+not to the extent of  
+not as good as  
+regardless of  
+not enough  
+not questioned  
+and  
+rather than  
+instead of saying  
+whether or not  
+at the same time  
+also  
+not to mention  
+speaking of  
+both  
+individual  
+near  
+for  
+in order to  
+why  
+how come  
+until  
+for this reason  
+for  
+thus  
+or  
+such as  
+up till now  
+because of this  
+to  
+not only  
+indeed  
+so as to  
+to avoid  
+as well as  
+therefore  
+in hope of  
+since  
+to the extent of  
+to the point that  
+to cause  
+they  
+any  
+anyone  
+allow  
+as if  
+but  
+whenever  
+but still  
+however  
+what  
+how come  
+in other words  
+from  
+still  
+continuously  
+he  
+others  
+they  
+above  
+to think  
+in order to  
+to avoid  
+as well as  
+this way  
+in hope of  
+so far  
+leading to  
+resulting in  
+they  
+them  
+he  
+he himself  
+not  
+not very  
+whenever  
+individual  
+human  
+someone  
+something  
+of which  
+me  
+whoever  
+how come  
+to consider  
+to adapt  
+according to  
+therefore  
+continuously  
+she  
+they  
+any  
+relating to  
+related  
+concerning  
+towards  
+in reference to  
+quite  
+more  
+how much  
+how many  
+big  
+everyone  
+she  
+they  
+good  
+like  
+as mentioned above  
+as follows  
+how  
+as if  
+just like  
+as though  
+if  
+thus  
+as if  
+initially  
+who knew  
+who knows  
+rather  
+rather  
+rather  
+rather  
+it  
+they  
+towards  
+about  
+treating  
+opposite party  
+comparison  
+will  
+small  
+you  
+after  
+and so on  
+just  
+exactly  
+so-called  
+just for  
+even though  
+although  
+despite  
+not only that  
+myself  
+already  
+thus  
+bah  
+clearly  
+and  
+also  
+and  
+nevertheless  
+as  
+thus  
+just as  
+local  
+indeed  
+towards  
+he  
+during  
+very  
+must  
+already  
+why  
+how  
+how come  
+so  
+in conclusion  
+from the perspective of  
+in general  
+in summary  
+to conclude  
+you  
+because  
+due to  
+thus  
+thus  
+yet  
+while  
+quite  
+to  
+when  
+come  
+come  
+from  
+related to  
+resulting in  
+for  
+alongside  
+so  
+oneself  
+even  
+replace  
+most  
+have  
+some  
+related to  
+so as  
+when  
+hoping  
+towards  
+local  
+itself  
+come  
+from  
+say  
+extremely  
+sure enough  
+really  
+certain  
+some  
+some  
+according to  
+so  
+just when  
+just like  
+just as  
+rely on  
+walk along  
+even  
+then  
+then  
+continue  
+result  
+give  
+afterwards  
+and  
+in summary  
+only  
+and  
+and  
+meanwhile  
+have  
+not only  
+other  
+besides  
+if  
+just  
+if not  
+or  
+if  
+such as  
+just to  
+many  
+on  
+if  
+or  
+just like  
+also  
+speaking of  
+these  
+these people  
+others  
+all  
+others  
+in  
+against  
+contrast  
+will  
+small  
+future  
+others  
+again  
+to proceed  
+reason  
+moreover  
+towards  
+none  
+still  
+not  
+case  
+consider  
+guess  
+farther  
+to  
+ahead  
+combine  
+first  
+conclude  
+take advantage  
+lead to  
+farther  
+use  
+useful  
+mention  
+talk  
+useful  
+method  
+develop  
+finally  
+rely on  
+follow  
+then  
+soon  
+!  
+,  
+:  
+;  
+?
