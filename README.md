@@ -92,11 +92,6 @@ Prerequisite: Before starting, first copy and run the following command to insta
 <li><a href="#">Bilibili - They say I touch, they say I pose, who cares about the helplessness of workers?</a></li>
 </ul>
 
-<i><b>References</b></i><br><br>
-<span id="fn1-black"><a href="#fn1">[1]</a> Hu Qi, "Psychological Mechanisms and Governance Paths of Online Rumors in the Era of Omnimedia," P135, 137, [J] Social Scientist, 2022(11)</span><br>
-<span id="fn2-black"><a href="#fn2">[2]</a> Lei Xia, "Cognitive Dissonance and Correction Mechanism of Rumors in Elderly Groups," [J] Modern Communication, 2023(3)</span><br>
-<span id="fn3-black"><a href="#fn3">[3]</a> Yang Yunyi, Zhao Xiqun, "Representation, Attribution, and Governance of Political Rumors in the 'Post-Truth' Era," P155, [J] Journal of Hunan University of Science and Technology (Social Science Edition), 2022(11)</span><br>
-
 </details>
 
 
@@ -144,9 +139,6 @@ Text analysis work content is shown in the referenced image <span id="fn5"><a hr
 
 <img src="#" />
 
-<i><b>References</b></i><br><br>
-<span id="fn4-black"><a href="#fn4">[1]</a> Huang Jun, "The Emotional Impact of Workplace Abuse and Behavioral Responses, and the Spread of Social Media like Bilibili," P149, [J] Communication Innovation Research, 2021(12)</span><br>
-<span id="fn5-black"><a href="#fn5">[2]</a> Guan Qin, Deng Sanhong, Wang Hao, "A Comparative Study of Common Stopword Lists for Chinese Text Clustering," P76, [J] Data Analysis and Knowledge Discovery, 2017(3) </span><br>
 </details>
 
 ## Basic Research on Sociological Topics
