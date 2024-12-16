@@ -85,12 +85,6 @@ Prerequisite: Before starting, first copy and run the following command to insta
 
 <p>However, the blending of multiculturalism and fragmented interpretations in the "post-truth" era has intensified the value divergence among the public, eroding the trust foundation. On one hand, the complex interests, diverse social ideologies, and various modes of communication intersect to create a diverse network culture in the "post-truth" era, increasing collisions and friction between mainstream and non-mainstream cultures. While non-mainstream cultures can be a beneficial supplement to mainstream culture, negative elements like "Buddhism culture," "internet celebrity culture," and "lying flat culture" often deviate from mainstream culture, especially distorting aesthetics and promoting money worship, which can mislead audiences with limited knowledge and experience, leading to political biases and eroding existing political trust. On the other hand, in the "post-truth" era, faced with an overwhelming amount of information, people tend to piece together facts and interpret the truth in fragmented ways. Once it concerns complex political rumors about social divisions, interest distribution, political corruption, and policy failures, people easily fall into continuously interpreting and reconstructing fragmented information, creating multiple "truths" that further ferment, thus causing frequent doubts about established political consensus, resulting in the loss of political trust and providing opportunities for the spread of rumors. <span id="fn3"><a href="#fn3-black"><sup>3</sup></a></span></p>
 
-<p>Referring to Yang Yunyi and Zhao Xiqun, personal life mostly involves money matters such as food, clothing, housing, and transportation, and social division is a normal phenomenon. The differences between "individual-collective" and "collective-individual" are primarily centered on national construction. The following two pieces of information are worth researching:</p>
-
-<ul>
-<li><a href="#">Zhihu - How to view CCTV's new video "Only by working hard can one feel at ease, it’s the life belief of countless ordinary people"?</a></li>
-<li><a href="#">Bilibili - They say I touch, they say I pose, who cares about the helplessness of workers?</a></li>
-</ul>
 
 </details>
 
