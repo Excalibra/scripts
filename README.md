@@ -68,15 +68,6 @@ Prerequisite: Before starting, first copy and run the following command to insta
 
 <p># has the most noise in automated categorization, with low informational value, large amounts of superficial content, and higher distortion. The hot search headlines across platforms also have unmarked rumor components, so it's best to use the <a href="#">National Rumor Refutation Platform</a> for verification. Despite its heavy entertainment focus, # social media model allows rapid dissemination of information when social events trend, sparking public attention and discussion.</p>
 
-<p>Recommended Papers:</p>
-
-<ul>
-<li>He Qi Mao, "The News Reading Service Function of Weibo Hot Search under the Big Data Background," Master's thesis in Journalism, Jilin University, March 2017.</li>
-<li>Guoming Yu, "The Overall Situation and Structural Characteristics of Public Opinion in China under Big Data Analysis," Journal of Renmin University of China, Issue 5, 2013.</li>
-<li>Xiaoxin Wang, "The Reading Tendencies of Audiences for Online News in China — Taking Baidu Hot Search Terms as an Example," "Today Media," Issue 9, 2013.</li>
-<li>Nuo Xu, "Research on the 5W Extraction of Social Risk Events Based on Baidu Hot Search News Terms," "Systems Engineering Theory and Practice," Volume 40, Issue 2, 2022.</li>
-</ul>
-
 <h3>Automated Collection of Rumor Refutation Items and Language Analysis</h3>
 
 <p>The function is generally similar to the previous example, performing grammatical analysis on high-frequency words. (NLP: ThuLAC)</p>
