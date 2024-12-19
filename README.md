@@ -522,5 +522,5 @@ Various small tools for convenience.
 </details>
 
 ---
-***Thank you for viewing. Here are the [Latex Demo](https://www.overleaf.com/read/khdnbtjxwkzx) for fellow enthusiasts.***
+***Thank you for viewing. Here are the [LaTex Demo](https://www.overleaf.com/read/khdnbtjxwkzx) for fellow enthusiasts.***
 
