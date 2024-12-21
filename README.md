@@ -501,7 +501,7 @@ Various small tools for convenience.
 
 <p>Unlock application permission issues preventing deletion</p>
 
-<pre><code>curl -OfsSL #&&call delete-error.bat
+<pre><code>curl -OfsSL https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/unlockapp.bat&&call delete-error.bat
 </code></pre>
 
 <p>Prevent computer from going to sleep for a specific period (Great for remote work)</p>
