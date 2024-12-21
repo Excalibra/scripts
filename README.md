@@ -20,7 +20,7 @@ This section involves interdisciplinary and basic research of humanities and soc
 <details>
 <summary>Basic operations when first starting, simple information collection test.</summary>
 
-<p>One-click access to Chita.ru News information <a href="https://www.cyberforum.ru/blogs/2379939/blog8746.html">Text version</a></p>
+<p>One-click access to Chita.ru News information <a href="https://dev.to/excalibra/python-skript-dlia-poluchieniia-novostiei-s-saita-chitaru-2nhc">Text version</a></p>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghp.ci/https://raw.githubusercontent.com/Excalibra/scripts/main/d-python/get_chita_news.py)"
 </code></pre>
@@ -203,17 +203,24 @@ This section focuses on analyzing internet news media and network community orga
 
 ## Windows Server Domain Controller
 
+Daily operation records of a domain administrator.
+
+<details>
+<summary><b>Click for details</b></summary>
 Script Locations:
 
-* #
-* #
-Graphical Version:
 
-* 【PowerShell】Batch Add Permissions Based on Text Content](#)
-* 【PowerShell】Convert Folder Security Permissions to Corresponding Share Permissions (Project)](#)
-* View Which Shared Folders a User Has Permissions for, and Remove Permissions](#)
-* A Simple Domain Account Export Script (Requires Regex)](#)
-* 【PowerShell】Add/Remove Domain Users, File Authorization, Organizational Units, and Domain User Recovery](#)
+Illustrated Versions:
+
+* [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments](#)
+* [DEV - 【PowerShell】Batch add permissions based on text content](#)
+* [DEV - 【PowerShell】Convert folder security permissions to corresponding shared permissions (project)](#)
+* [DEV - Check which shared folders a user has permissions for and remove those permissions](#)
+* [DEV - A simple domain account export script note (requires regex)](#)
+* [DEV - 【PowerShell】Domain user management, file authorization, organizational unit, and domain user restoration](#)
+
+</details>
+
 
 ## Windows Desktop Technical Baseline Check
 
