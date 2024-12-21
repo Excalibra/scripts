@@ -504,21 +504,6 @@ Various small tools for convenience.
 <pre><code>curl -OfsSL https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/unlockapp.bat&&call delete-error.bat
 </code></pre>
 
-<p>Prevent computer from going to sleep for a specific period (Great for remote work)</p>
-
-<pre><code>curl -OfsSL #&&call stay-awake.bat
-</code></pre>
-
-<p>Memory and Disk Health Check for Windows</p>
-
-<pre><code>curl -OfsSL #&&call win_memory_disk.bat
-</code></pre>
-
-<p>Check Windows system login users and allow remote login</p>
-
-<pre><code>curl -OfsSL #&&call check-users.bat
-</code></pre>
-
 </details>
 
 ---
