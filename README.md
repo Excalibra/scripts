@@ -20,7 +20,7 @@ This section involves interdisciplinary and basic research of humanities and soc
 <details>
 <summary>Basic operations when first starting, simple information collection test.</summary>
 
-<p>One-click access to Chita.ru News information <a href="https://dev.to/excalibra/python-skript-dlia-poluchieniia-novostiei-s-saita-chitaru-2nhc">Text version</a></p>
+<p>One-click access to Chita.ru News information <a href="https://www.cyberforum.ru/blogs/2379939/blog8746.html">Text version</a></p>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghp.ci/https://raw.githubusercontent.com/Excalibra/scripts/main/d-python/get_chita_news.py)"
 </code></pre>
