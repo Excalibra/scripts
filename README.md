@@ -475,11 +475,6 @@ This section contains fun projects created through my exploration, combining var
 <pre><code>iwr -useb # | iex
 </code></pre>
 
-<p>Powershell for generating XchangePDF Editor license</p>
-
-<pre><code>curl # -Outfile xchange_v8_active.ps1 | powershell -c xchange_v8_active.ps1
-</code></pre>
-
 
 </details>
 
