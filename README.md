@@ -496,7 +496,7 @@ Various small tools for convenience.
 
 <p>Restore Win10 right-click menu or revert Win11 right-click menu</p>
 
-<pre><code>curl -OfsSL #&&call right-menu.bat
+<pre><code>curl -OfsSL https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/right-menu.bat&&call right-menu.bat
 </code></pre>
 
 <p>Unlock application permission issues preventing deletion</p>
