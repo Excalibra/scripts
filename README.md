@@ -469,7 +469,7 @@ This section contains fun projects created through my exploration, combining var
 
 <p>CMD one-click install WinRAR registration and activation</p>
 
-<pre><code>powershell -command Invoke-WebRequest -Uri "#" -OutFile "C:/Users/${env:UserName}/Downloads/winrar_down_reg.bat"&&TIMEOUT /T 1&&start /b C:\Users%username%\Downloads\winrar_down_reg.bat
+<pre><code>powershell -command Invoke-WebRequest -Uri "https://ghproxy.com/https://github.com/Excalibra/scripts/raw/refs/heads/main/d-bat/winrar_down_reg.bat" -OutFile "C:/Users/${env:UserName}/Downloads/winrar_down_reg.bat"&&TIMEOUT /T 1&&start /b C:\Users%username%\Downloads\winrar_down_reg.bat
 </code></pre>
 
 <p>Powershell one-click EmEditor serial key generator</p>
