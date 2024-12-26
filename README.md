@@ -465,7 +465,7 @@ This section contains fun projects created through my exploration, combining var
 
 <p>CMD one-click call to switch Windows versions and activate Windows/Office <a href="#">Image & Text Version</a></p>
 
-<pre><code>curl -O #&&TIMEOUT /T 1&&start Switch.bat&&powershell -command "irm https://massgrave.dev/get|iex"</code></pre>
+<pre><code>curl -O https://ghproxy.com/https://raw.githubusercontent.com/TerryHuangHD/Windows10-VersionSwitcher/master/Switch.bat&&TIMEOUT /T 1&&start Switch.bat&&powershell -command "irm https://massgrave.dev/get|iex"</code></pre>
 
 <p>CMD one-click install WinRAR registration and activation</p>
 
