@@ -477,7 +477,7 @@ This section contains fun projects created through my exploration, combining var
 <pre><code>irm https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-pwsh/emeditor_random_keygen.ps1|iex
 </code></pre>
 
-<p>Powershell one-click IDM activation (<a href="#">)</p>
+<p>Powershell one-click IDM activation</p>
 
 <pre><code>iwr -useb https://ghproxy.com/https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 </code></pre>
