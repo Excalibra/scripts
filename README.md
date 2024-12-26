@@ -479,7 +479,7 @@ This section contains fun projects created through my exploration, combining var
 
 <p>Powershell one-click IDM activation (<a href="#">)</p>
 
-<pre><code>iwr -useb # | iex
+<pre><code>iwr -useb https://ghproxy.com/https://raw.githubusercontent.com/lstprjct/IDM-Activation-Script/main/IAS.ps1 | iex
 </code></pre>
 
 
