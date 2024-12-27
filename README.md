@@ -430,7 +430,7 @@ Work and live simultaneously.
 
 <h3>Wallpaper Settings</h3>
 
-<p>One-click Bing wallpaper downloader <a href="#">Image & Text Version</a></p>
+<p>One-click Bing wallpaper downloader <a href="https://dev.to/excalibra/entry-level-bing-wallpaper-scraper-7pg">Image & Text Version</a></p>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-python/get_bing_wallpapers.py)"</code></pre>
 
