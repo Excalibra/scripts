@@ -432,7 +432,7 @@ Work and live simultaneously.
 
 <p>One-click Bing wallpaper downloader <a href="#">Image & Text Version</a></p>
 
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+<pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-python/get_bing_wallpapers.py)"</code></pre>
 
 <p>One-click download of Microsoft official design wallpapers using Ruby</p>
 
