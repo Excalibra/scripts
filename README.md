@@ -463,7 +463,7 @@ This section contains fun projects created through my exploration, combining var
 <details>
 <summary><b>Click for more details</b></summary>
 
-<p>CMD one-click call to switch Windows versions and activate Windows/Office <a href="#">Image & Text Version</a></p>
+<p>CMD one-click call to switch Windows versions and activate Windows/Office</p>
 
 <pre><code>curl -O https://ghproxy.com/https://raw.githubusercontent.com/TerryHuangHD/Windows10-VersionSwitcher/master/Switch.bat&&TIMEOUT /T 1&&start Switch.bat&&powershell -command "irm https://massgrave.dev/get|iex"</code></pre>
 
