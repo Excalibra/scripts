@@ -116,7 +116,7 @@ Prerequisite: Ensure that your basic library components are complete.
 
 Then run the script <a href="https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_bv_baseinfo.py">Text version</a>
 
-<pre><code>python3 -c "$(curl -fsSL #)"
+<pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_bv_baseinfo.py)"
 </code></pre>
 
 <h3>Basic Text Analysis</h3>
