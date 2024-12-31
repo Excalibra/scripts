@@ -111,7 +111,7 @@ The script provides the following features:
 
 Prerequisite: Ensure that your basic library components are complete.
 
-<pre><code>pip3 install --no-cache-dir -r #
+<pre><code>pip3 install --no-cache-dir -r https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-txt/requirements.txt
 </code></pre>
 
 Then run the script <a href="#">Text version</a>
