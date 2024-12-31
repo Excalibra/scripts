@@ -114,7 +114,7 @@ Prerequisite: Ensure that your basic library components are complete.
 <pre><code>pip3 install --no-cache-dir -r https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-txt/requirements.txt
 </code></pre>
 
-Then run the script <a href="https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_bv_baseinfo.py">Text version</a>
+Then run the script <a href="https://dev.to/excalibra/python-a-script-for-processing-and-analysing-bilibili-video-comments-and-bullet-chats-3egc">Text version</a>
 
 <pre><code>python3 -c "$(curl -fsSL https://ghproxy.com/https://github.com/Excalibra/scripts/blob/main/d-python/get_bv_baseinfo.py)"
 </code></pre>
