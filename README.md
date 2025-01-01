@@ -188,12 +188,6 @@ This section focuses on analyzing internet news media and network community orga
 <p>1. Theoretical Significance: Review relevant theories used in the study of lurking from sociology, economics, and psychology, and build a theoretical framework for lurking research to provide theoretical support for future researchers.</p>
 <p>2. Practical Significance: The practical significance of studying digital natives' lurking behavior mainly lies in economic benefits, the sustainable development of the internet, and collective intelligence.</p>
 
-<h5>Based on "Theory of Planned Behavior", "Social Cultural Capital Theory", "Social Identity Theory", and statistical knowledge, the questionnaire design scheme</h5>
-
-<p>Sample questionnaire design image<span id="fn10"><sup><a href="#fn9-black">5</a></sup></span></p> 
-
-<img src="#" width="50%" height="50%"/>
-
 <ul>
 <li>Reliability Analysis: Focuses on whether the Cronbach's alpha value of each latent variable exceeds the critical value of 0.7.</li>
 <li>Validity Analysis: Mainly based on exploratory factor analysis, statistical methods are used to judge whether the data has satisfactory construct validity.</li>
