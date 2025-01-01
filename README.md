@@ -188,10 +188,19 @@ This section focuses on analyzing internet news media and network community orga
 <p>1. Theoretical Significance: Review relevant theories used in the study of lurking from sociology, economics, and psychology, and build a theoretical framework for lurking research to provide theoretical support for future researchers.</p>
 <p>2. Practical Significance: The practical significance of studying digital natives' lurking behavior mainly lies in economic benefits, the sustainable development of the internet, and collective intelligence.</p>
 
-<ul>
-<li>Reliability Analysis: Focuses on whether the Cronbach's alpha value of each latent variable exceeds the critical value of 0.7.</li>
-<li>Validity Analysis: Mainly based on exploratory factor analysis, statistical methods are used to judge whether the data has satisfactory construct validity.</li>
-</ul>
+<li>Reliability Analysis: This primarily examines whether the Cronbach's alpha value of each latent variable exceeds the critical value of 0.7.</li>
+
+<li>Validity Analysis: This is mainly tested through factor analysis, specifically by performing a KMO (Kaiser-Meyer-Olkin) coefficient analysis on the sample data. Kaiser provided commonly used KMO measurement standards:</li>
+
+    Above 0.9 indicates excellent suitability,
+    0.8 indicates good suitability,
+    0.7 indicates average suitability,
+    0.6 indicates low suitability, and
+    Below 0.5 indicates very poor suitability.
+
+<li>Factor Correlation Analysis: Bartlett's test of sphericity is used to examine whether there is a correlation among the observed variables. This is a prerequisite for conducting factor analysis. The test is based on the null hypothesis that there is no correlation among the observed variables. If the significance level obtained from Bartlett's test of sphericity is low (commonly set at 0.05), the null hypothesis can be rejected, indicating that there is a correlation among the observed variables and that factor analysis is suitable.</li>
+
+<li>Scale Granularity Analysis: The Likert scale typically has 5 or 7 levels, but other numbers can also be used. Choosing an appropriate range of levels should consider the ease with which respondents can understand and answer. Fewer levels may restrict respondents when selecting a neutral option, while more levels may increase the complexity of their choices.</li>
 
 </details>
 
