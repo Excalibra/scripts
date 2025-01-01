@@ -29,6 +29,124 @@ Illustrated Versions:
 
 </details>
 
+## Windows Desktop Technical Baseline Check
+
+First, ensure that PowerShell is enabled on your system:
+
+* **Enable PowerShell feature: `Set-ExecutionPolicy RemoteSigned`**
+* **Disable PowerShell feature: `Set-ExecutionPolicy Restricted`**
+
+<details>
+<summary><b>Click for Details</b></summary>
+
+One-click usage, local download with GB2312 encoding <a href="#">Graphical Version</a>
+
+<pre><code>
+irm #|iex
+</code></pre>
+
+Feature Overview:
+
+<ol>
+<li>Check IP and network device connectivity status</li>
+<li>Check printer, print spooler, and scanner status</li>
+<li>Check basic driver information for hard drives, CPUs, memory, graphics cards, etc.</li>
+<li>Check device security, recent updates, scheduled tasks, certificate policies, system core file access control</li>
+<li>Check host active sharing protocol-related information</li>
+<li>Check computer sleep, reboot frequency, abnormal shutdown, program crashes, etc.</li>
+<li>Execute all functions of options 1–6</li>
+<li>Generate analysis reports for "Device Driver Check", "Five-Day Warning Events", "Login/Logout Activity Logs", "Monthly Threat Overview"</li>
+<li>View guidance and development instructions</li>
+</ol>
+
+By the way
+
+Linux baseline check (PR) can be found at: <a href="https://github.com/al0ne/LinuxCheck">al0ne/LinuxCheck</a>. For Macs, maintaining these security services is not suitable for small and medium-sized businesses.
+
+<ul>
+<li><a href="https://www.apple.com.cn/business/docs/site/Mac_Deployment_Overview.pdf">Apple - Mac System Deployment</a></li>
+<li><a href="#">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
+</ul>
+
+In the broader context, this article <a href="#">CSDN - Three Methods to Manage Mac Computers in Enterprises</a> mentions management strategies that are considered effective, but compared to Windows, they are still not sufficient.
+
+</details>
+
+## Windows Enterprise Basic Environment Requirements
+
+Main Involves:
+
+* IE, Windows Defender, Windows Update, Flash & Chrome v87, DingTalk silent installation, automatic printer installation
+* File checksum tools: MD5, SHA1, SHA256 hash calculation, comparison, verification tools.
+* C drive space cleanup: DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc. One-click cleanup script (C drive Thanos script).
+* Basic skills required for job positions, IQ and EQ assessment, salary range summary, and demand analysis.
+
+<details>
+<summary><b>Click for Details</b></summary>
+
+<p>Prevent Edge hijacking IE <a href="#">Graphical Version</a></p>
+
+<pre><code>curl -L  #|cmd</code></pre>
+
+<ul>
+<li>Note【1】: <a href="#">Domain Controller IE Template Graphical Version</a></li>
+<li>Note【2】: Code Address: <a href="#">#</a></li>
+</ul>
+
+<p>Calculate IE compatible view website hex, one-click usage, need to convert to GB2312 encoding for local use.</p>
+
+<pre><code>
+irm #|iex
+</code></pre>
+
+<p>One-click permanently disable Windows update settings <a href="#">Graphical Version</a></p>
+
+<pre><code>curl -L  #|cmd</code></pre>
+
+<p>One-click restore disabled Windows update settings</p>
+
+<pre><code>curl -L  #|cmd</code></pre>
+
+<p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="#">sordum.org/defender-control</a>)</p>
+
+<pre><code>curl -OfsSL #&&call choice_wdrt.bat</code></pre>
+
+<p>C drive Thanos script: One-click cleanup of DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc.</p>
+
+<pre><code>curl -OfsSL #</code></pre>
+
+<p>One-click check if a program runs with administrator rights</p>
+
+<pre><code>curl -OfsSL#</code></pre>
+
+<p>One-click MD5, SHA1, SHA256 file verification tool</p>
+
+<pre><code>curl -OfsSL #&&call md5tools.bat</code></pre>
+
+<p>One-click install Flash and configure supported Chrome version 87</p>
+
+<pre><code>curl -OfsSL #&&call fxxk_chxxa.bat</code></pre>
+
+<p>One-click block Chrome browser updates</p>
+
+<pre><code>curl -OfsSL #&&call deny_chrome_update.bat</code></pre>
+
+<p>One-click PDF to PNG</p>
+
+<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+
+<p>One-click fix for shared printer 0x11b error</p>
+
+<pre><code>curl -OfsSL #&&call fix_0x11b_share_print.bat</code></pre>
+
+<p>One-click retrieve job position information and reference material websites</p>
+
+<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+
+<p> Install specified Chrome and block updates: <a href="#"> only_install_chrome65.bat </a>; DingTalk silent install source code: <a href="#">dingding</a></p>
+
+</details>
+
 ## Analysis of Common Platform Hot Searches and Rumor Refutation
 
 This section involves interdisciplinary and basic research of humanities and social science journals and paper research subjects (including colleague interviews, online forum surveys, etc.).
@@ -265,125 +383,6 @@ Specifically, fraudsters often apply social psychology to construct dilemmas and
 
 Once trust is established in these high-pressure scenarios, fraudsters often ask job seekers to demonstrate their “sincerity” and “willingness to cooperate.” At this stage, fraudsters may request personal information, payment of fees, or completion of specific tasks. While these requests may seem reasonable, they are, in fact, aimed at obtaining sensitive information or economic gain from the job seeker.</p>
 </details> 
-
-
-## Windows Desktop Technical Baseline Check
-
-First, ensure that PowerShell is enabled on your system:
-
-* **Enable PowerShell feature: `Set-ExecutionPolicy RemoteSigned`**
-* **Disable PowerShell feature: `Set-ExecutionPolicy Restricted`**
-
-<details>
-<summary><b>Click for Details</b></summary>
-
-One-click usage, local download with GB2312 encoding <a href="#">Graphical Version</a>
-
-<pre><code>
-irm #|iex
-</code></pre>
-
-Feature Overview:
-
-<ol>
-<li>Check IP and network device connectivity status</li>
-<li>Check printer, print spooler, and scanner status</li>
-<li>Check basic driver information for hard drives, CPUs, memory, graphics cards, etc.</li>
-<li>Check device security, recent updates, scheduled tasks, certificate policies, system core file access control</li>
-<li>Check host active sharing protocol-related information</li>
-<li>Check computer sleep, reboot frequency, abnormal shutdown, program crashes, etc.</li>
-<li>Execute all functions of options 1–6</li>
-<li>Generate analysis reports for "Device Driver Check", "Five-Day Warning Events", "Login/Logout Activity Logs", "Monthly Threat Overview"</li>
-<li>View guidance and development instructions</li>
-</ol>
-
-By the way
-
-Linux baseline check (PR) can be found at: <a href="https://github.com/al0ne/LinuxCheck">al0ne/LinuxCheck</a>. For Macs, maintaining these security services is not suitable for small and medium-sized businesses.
-
-<ul>
-<li><a href="https://www.apple.com.cn/business/docs/site/Mac_Deployment_Overview.pdf">Apple - Mac System Deployment</a></li>
-<li><a href="#">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
-</ul>
-
-In the broader context, this article <a href="#">CSDN - Three Methods to Manage Mac Computers in Enterprises</a> mentions management strategies that are considered effective, but compared to Windows, they are still not sufficient.
-
-</details>
-
-## Windows Enterprise Basic Environment Requirements
-
-Main Involves:
-
-* IE, Windows Defender, Windows Update, Flash & Chrome v87, DingTalk silent installation, automatic printer installation
-* File checksum tools: MD5, SHA1, SHA256 hash calculation, comparison, verification tools.
-* C drive space cleanup: DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc. One-click cleanup script (C drive Thanos script).
-* Basic skills required for job positions, IQ and EQ assessment, salary range summary, and demand analysis.
-
-<details>
-<summary><b>Click for Details</b></summary>
-
-<p>Prevent Edge hijacking IE <a href="#">Graphical Version</a></p>
-
-<pre><code>curl -L  #|cmd</code></pre>
-
-<ul>
-<li>Note【1】: <a href="#">Domain Controller IE Template Graphical Version</a></li>
-<li>Note【2】: Code Address: <a href="#">#</a></li>
-</ul>
-
-<p>Calculate IE compatible view website hex, one-click usage, need to convert to GB2312 encoding for local use.</p>
-
-<pre><code>
-irm #|iex
-</code></pre>
-
-<p>One-click permanently disable Windows update settings <a href="#">Graphical Version</a></p>
-
-<pre><code>curl -L  #|cmd</code></pre>
-
-<p>One-click restore disabled Windows update settings</p>
-
-<pre><code>curl -L  #|cmd</code></pre>
-
-<p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="#">sordum.org/defender-control</a>)</p>
-
-<pre><code>curl -OfsSL #&&call choice_wdrt.bat</code></pre>
-
-<p>C drive Thanos script: One-click cleanup of DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc.</p>
-
-<pre><code>curl -OfsSL #</code></pre>
-
-<p>One-click check if a program runs with administrator rights</p>
-
-<pre><code>curl -OfsSL#</code></pre>
-
-<p>One-click MD5, SHA1, SHA256 file verification tool</p>
-
-<pre><code>curl -OfsSL #&&call md5tools.bat</code></pre>
-
-<p>One-click install Flash and configure supported Chrome version 87</p>
-
-<pre><code>curl -OfsSL #&&call fxxk_chxxa.bat</code></pre>
-
-<p>One-click block Chrome browser updates</p>
-
-<pre><code>curl -OfsSL #&&call deny_chrome_update.bat</code></pre>
-
-<p>One-click PDF to PNG</p>
-
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
-
-<p>One-click fix for shared printer 0x11b error</p>
-
-<pre><code>curl -OfsSL #&&call fix_0x11b_share_print.bat</code></pre>
-
-<p>One-click retrieve job position information and reference material websites</p>
-
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
-
-<p> Install specified Chrome and block updates: <a href="#"> only_install_chrome65.bat </a>; DingTalk silent install source code: <a href="#">dingding</a></p>
-
-</details>
 
 ## Various Management Maintenance Scripts
 
