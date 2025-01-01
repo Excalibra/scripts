@@ -9,6 +9,26 @@ The project involves interdisciplinary applications and analysis of information:
 
 The project code involves component version compatibility issues. <a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Platform%20Compatibility%20Issues.ipynb">Click here</a> for more details; regarding the inability to preview ipynb on GitHub, [please refer here](https://blog.reviewnb.com/jupyter-notebook-not-rendering-on-github/); to generate automated information processing reports, check the [d-xlsx](./d-xlsx) directory for more details.
 
+## Windows Server Domain Controller
+
+Daily operation records of a domain administrator.
+
+<details>
+<summary><b>Click for details</b></summary>
+Script Locations:
+
+
+Illustrated Versions:
+
+* [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments](#)
+* [DEV - 【PowerShell】Batch add permissions based on text content](#)
+* [DEV - 【PowerShell】Convert folder security permissions to corresponding shared permissions (project)](#)
+* [DEV - Check which shared folders a user has permissions for and remove those permissions](#)
+* [DEV - A simple domain account export script note (requires regex)](#)
+* [DEV - 【PowerShell】Domain user management, file authorization, organizational unit, and domain user restoration](#)
+
+</details>
+
 ## Analysis of Common Platform Hot Searches and Rumor Refutation
 
 This section involves interdisciplinary and basic research of humanities and social science journals and paper research subjects (including colleague interviews, online forum surveys, etc.).
@@ -245,27 +265,6 @@ Specifically, fraudsters often apply social psychology to construct dilemmas and
 
 Once trust is established in these high-pressure scenarios, fraudsters often ask job seekers to demonstrate their “sincerity” and “willingness to cooperate.” At this stage, fraudsters may request personal information, payment of fees, or completion of specific tasks. While these requests may seem reasonable, they are, in fact, aimed at obtaining sensitive information or economic gain from the job seeker.</p>
 </details> 
-
-
-## Windows Server Domain Controller
-
-Daily operation records of a domain administrator.
-
-<details>
-<summary><b>Click for details</b></summary>
-Script Locations:
-
-
-Illustrated Versions:
-
-* [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments](#)
-* [DEV - 【PowerShell】Batch add permissions based on text content](#)
-* [DEV - 【PowerShell】Convert folder security permissions to corresponding shared permissions (project)](#)
-* [DEV - Check which shared folders a user has permissions for and remove those permissions](#)
-* [DEV - A simple domain account export script note (requires regex)](#)
-* [DEV - 【PowerShell】Domain user management, file authorization, organizational unit, and domain user restoration](#)
-
-</details>
 
 
 ## Windows Desktop Technical Baseline Check
