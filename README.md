@@ -192,11 +192,11 @@ This section focuses on analyzing internet news media and network community orga
 
 <li>Validity Analysis: This is mainly tested through factor analysis, specifically by performing a KMO (Kaiser-Meyer-Olkin) coefficient analysis on the sample data. Kaiser provided commonly used KMO measurement standards:</li>
 
-    Above 0.9 indicates excellent suitability,
-    0.8 indicates good suitability,
-    0.7 indicates average suitability,
-    0.6 indicates low suitability, and
-    Below 0.5 indicates very poor suitability.
+- Above 0.9 indicates excellent suitability,
+- 0.8 indicates good suitability,
+- 0.7 indicates average suitability,
+- 0.6 indicates low suitability, and
+- Below 0.5 indicates very poor suitability.
 
 <li>Factor Correlation Analysis: Bartlett's test of sphericity is used to examine whether there is a correlation among the observed variables. This is a prerequisite for conducting factor analysis. The test is based on the null hypothesis that there is no correlation among the observed variables. If the significance level obtained from Bartlett's test of sphericity is low (commonly set at 0.05), the null hypothesis can be rejected, indicating that there is a correlation among the observed variables and that factor analysis is suitable.</li>
 
