@@ -192,6 +192,7 @@ This section focuses on analyzing internet news media and network community orga
 
 <li>Validity Analysis: This is mainly tested through factor analysis, specifically by performing a KMO (Kaiser-Meyer-Olkin) coefficient analysis on the sample data. Kaiser provided commonly used KMO measurement standards:</li>
 
+
 - Above 0.9 indicates excellent suitability,
 - 0.8 indicates good suitability,
 - 0.7 indicates average suitability,
