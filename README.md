@@ -147,6 +147,71 @@ irm #|iex
 
 </details>
 
+## Linux Cloud Server Security Transformation
+
+Cloud servers purchased from cloud service providers generally have no security software protection. Every day, cybercriminals scan public networks, attempting to remotely brute-force and invade servers. Therefore, preventive and defensive measures need to be taken.
+
+<details>
+<summary><b>Click for details</b></summary>
+
+<h3>One-click configuration for SSH login, user password policy, and Ban IP setup <a href="#">Image & Text Version</a></h3>
+
+<ul>
+<li>SSH Login: Key-based login without password, long heartbeat connection to prevent client disconnection</li>
+<li>Password Policy: No restrictions on special characters or case, supports minimum length of 4-5 characters</li>
+<li>Ban IP: Permanently ban IP after three failed login attempts within 30 seconds, except for your own IP.</li>
+</ul>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+<p>SSH single configuration: One-click SSH fast configuration for SSH key login policy and simple password rules. (The single configuration part restricts access to only your IP, i.e., AllowUsers)</p>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+<p>fail2ban single configuration: One-click fail2ban setup, from download to installation, configuration generation, and service start. (You can refresh your public IP configuration with the single part.)</p>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+<h3>One-click to create a custom user with admin privileges <a href="#">Image & Text Version</a></h3>
+
+<ul>
+<li>Custom username</li>
+<li>No-password for su, sudo, and wheel group members</li>
+<li>Lock root remote login in sshd_config to enhance security</li>
+</ul>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+<h3>One-click FTP setup <a href="#">Image & Text Version</a></h3>
+
+<ul>
+<li>Shared directory: /var/ftp/share</li>
+<li>Limit unauthorized access to shared directories, allowing read and write.</li>
+<li>Secure, privatized, limited to your public IP access.</li>
+</ul>
+
+<p>No password version, username: ftpuser, password: P@ssw0rd</p>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+<p>Custom user version</p>
+
+<pre><code>
+sudo bash -c  "$(curl -fL #)"
+</code></pre>
+
+</details>
+
 ## Analysis of Common Platform Hot Searches and Rumor Refutation
 
 This section involves interdisciplinary and basic research of humanities and social science journals and paper research subjects (including colleague interviews, online forum surveys, etc.).
@@ -393,70 +458,6 @@ Complete tool, scripts, documentation</details>
 
 </details>
 
-## Linux Cloud Server Security Transformation
-
-Cloud servers purchased from cloud service providers generally have no security software protection. Every day, cybercriminals scan public networks, attempting to remotely brute-force and invade servers. Therefore, preventive and defensive measures need to be taken.
-
-<details>
-<summary><b>Click for details</b></summary>
-
-<h3>One-click configuration for SSH login, user password policy, and Ban IP setup <a href="#">Image & Text Version</a></h3>
-
-<ul>
-<li>SSH Login: Key-based login without password, long heartbeat connection to prevent client disconnection</li>
-<li>Password Policy: No restrictions on special characters or case, supports minimum length of 4-5 characters</li>
-<li>Ban IP: Permanently ban IP after three failed login attempts within 30 seconds, except for your own IP.</li>
-</ul>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-<p>SSH single configuration: One-click SSH fast configuration for SSH key login policy and simple password rules. (The single configuration part restricts access to only your IP, i.e., AllowUsers)</p>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-<p>fail2ban single configuration: One-click fail2ban setup, from download to installation, configuration generation, and service start. (You can refresh your public IP configuration with the single part.)</p>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-<h3>One-click to create a custom user with admin privileges <a href="#">Image & Text Version</a></h3>
-
-<ul>
-<li>Custom username</li>
-<li>No-password for su, sudo, and wheel group members</li>
-<li>Lock root remote login in sshd_config to enhance security</li>
-</ul>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-<h3>One-click FTP setup <a href="#">Image & Text Version</a></h3>
-
-<ul>
-<li>Shared directory: /var/ftp/share</li>
-<li>Limit unauthorized access to shared directories, allowing read and write.</li>
-<li>Secure, privatized, limited to your public IP access.</li>
-</ul>
-
-<p>No password version, username: ftpuser, password: P@ssw0rd</p>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-<p>Custom user version</p>
-
-<pre><code>
-sudo bash -c  "$(curl -fL #)"
-</code></pre>
-
-</details>
 
 ## Wallpaper Settings | Quick Web Pages
 
