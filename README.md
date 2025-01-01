@@ -203,7 +203,49 @@ This section focuses on analyzing internet news media and network community orga
 
 <li>Scale Granularity Analysis: The Likert scale typically has 5 or 7 levels, but other numbers can also be used. Choosing an appropriate range of levels should consider the ease with which respondents can understand and answer. Fewer levels may restrict respondents when selecting a neutral option, while more levels may increase the complexity of their choices.</li>
 
+Exploratory Analysis:
+
+1. How many government officials read Marx, and how many believe in Marx?
+2. Conduct a comprehensive analysis of employment, including individuals, enterprises, and related fraud cases.
+
+
+
+
+
+
+
 </details>
+
+Exploratory Analysis:
+
+- How many government officials read Marx, and how many believe in Marx?
+- Conduct a comprehensive analysis of employment, including individuals, enterprises, and related fraud cases.
+
+<details> 
+<summary>Click for details</summary>
+<h4 id="h3view"><a href="https://nbviewer.org/github/">Reading “On the Reasons for the Decline in the Prestige of Marxism”</a></h4> 
+
+<h5>Reasons for the decline in Marxism's prestige:</h5>
+
+<p>Negative factors: 1. The failure of the Soviet-style socialist system dealt a significant blow. 2. The behaviour of some Communist Party officials and Marxist theorists, which contradicted their principles, severely damaged Marxism's reputation. 3. Many people do not understand Marxism well, cannot apply it, and fail to solve practical problems. 4. The rejection of Marxist theories by certain individuals has also contributed to its decline.</p>
+
+<p>Positive factors: 1. Horizontally, reforms and opening up have broadened our theoretical perspectives, reducing the relative importance of Marxism. 2. Vertically, the creation of new theories such as socialism with Chinese characteristics has further diminished Marxism's relative significance. 3. People are increasingly adopting a scientific and analytical approach to Marxist teachings, causing its prestige to fall from its peak.</p> <h4 id="h3view"><a href="https://nbviewer.org/github/">Analysis of Employment Trends and Fraud Prevention Strategies</a></h4> <h4>Core Motivations of Fraudsters</h4> <p>We are surrounded by grand narratives and emotional reflections, but what we often lack is “the facts themselves.” Today, things have improved compared to the past, where information dissemination was limited to search engines and web portals. Now, with the advent of social media and greater public scrutiny, transparency has increased. However, this also introduces a new challenge: the prevalence of review moderation and content control. Given the current system and structure in our country, the overall outlook remains challenging. Our understanding is largely shaped by the cost others pay and the information disclosed.
+
+- The fraudster’s objectives are diverse, including obtaining money, controlling individuals, or acquiring labour.
+- The job seeker's objective is relatively singular: providing labour in exchange for money.
+
+It is worth noting that both fraudsters and job seekers are ultimately seeking to acquire money from one another. This creates a zero-sum game based on incomplete information.
+
+Fraudsters, with their varied objectives and preferences, have a broad range of strategies and approaches. They exhaust all possible means to maximise their benefits. The core strategy of fraudsters is to target specific contexts and scenarios, aiming to acquire the worker's money either before or after they perform labour.</p>
+<h4>Fraudsters' Construction of Belief and Fraud Implementation</h4> <p>For fraudsters, whether they succeed in deceiving a job seeker is a matter of probability. Job seekers come from various backgrounds, and their behaviour is unpredictable. However, one critical point must be noted: fraudsters succeed in deceiving those who believe they are not fraudsters. In other words, the key to fraudsters' success lies in building trust with the job seekers.
+
+Although each individual's actions are unpredictable, fraudsters employ various methods to create a specific sense of scarcity, which fosters trust. Using this trust, they can introduce conditions to manipulate the job seeker's intentions and behaviour.
+
+Specifically, fraudsters often apply social psychology to construct dilemmas and staged scenarios to influence the thoughts and emotions of job seekers. They frequently highlight limited job openings, urgent deadlines, special insider opportunities, or other forms of scarcity to stimulate competitiveness and desire among job seekers, pushing them to make quick decisions.
+
+Once trust is established in these high-pressure scenarios, fraudsters often ask job seekers to demonstrate their “sincerity” and “willingness to cooperate.” At this stage, fraudsters may request personal information, payment of fees, or completion of specific tasks. While these requests may seem reasonable, they are, in fact, aimed at obtaining sensitive information or economic gain from the job seeker.</p>
+</details> 
+
 
 ## Windows Server Domain Controller
 
