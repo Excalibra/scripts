@@ -447,6 +447,10 @@ Although each individual's actions are unpredictable, fraudsters employ various 
 Specifically, fraudsters often apply social psychology to construct dilemmas and staged scenarios to influence the thoughts and emotions of job seekers. They frequently highlight limited job openings, urgent deadlines, special insider opportunities, or other forms of scarcity to stimulate competitiveness and desire among job seekers, pushing them to make quick decisions.
 
 Once trust is established in these high-pressure scenarios, fraudsters often ask job seekers to demonstrate their “sincerity” and “willingness to cooperate.” At this stage, fraudsters may request personal information, payment of fees, or completion of specific tasks. While these requests may seem reasonable, they are, in fact, aimed at obtaining sensitive information or economic gain from the job seeker.</p>
+
+<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/refs/heads/main/d-ipynb/Empirical Study on the Motivations of Digital Natives' (Users) Online Lurking.ipynb">Empirical Study on the Motivations of Digital Natives' (Users) Online Lurking
+</a></h4>
+
 </details> 
 
 ## Various Management Maintenance Scripts
