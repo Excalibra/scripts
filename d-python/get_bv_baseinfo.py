@@ -361,30 +361,7 @@ class BilibiliExcel:
     def save_workbook(workbook):
         workbook.save(Tools.get_save())
 
-class PrintInfo:
-    # Print basic information
-    @staticmethod
-    def base_message():
-        if 'Windows' == platform.system():
-            os.system('cls')
-        else:
-            os.system('clear')
-
-        text = '''
-        ************************************
-
-        Bilibili Video Analysis v2023.6.26
-        Author: Github.com/hoochanlon
-        Project URL: https://github.com/hoochanlon/scripts
-
-        Features:
-        1. Analyze and visualize Bilibili video data.
-
-        Disclaimer: For research and learning purposes only.
-
-        ************************************
-        '''
-        print(text.center(50, ' '))
+draft
 
 if __name__ == '__main__':
     PrintInfo.base_message()
