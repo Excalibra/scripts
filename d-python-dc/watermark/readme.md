@@ -63,7 +63,7 @@ To create an executable file using PyInstaller, use the following command:
 ```
 pyinstaller -w -F -i "C:\Users\administrator\Desktop\watermark\images\logo.ico" --onefile ^
 --add-data "C:\Users\administrator\Desktop\watermark\images;images" ^
---name "屏幕加水印" --distpath "C:\Users\administrator\Desktop" "C:\Users\administrator\Desktop\watermark\main.py"
+--name "Screen Watermark" --distpath "C:\Users\administrator\Desktop" "C:\Users\administrator\Desktop\watermark\main.py"
 ```
 
 This generates a standalone executable with the specified icon and ensures the watermark assets are included.
