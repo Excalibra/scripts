@@ -43,9 +43,7 @@ pip install -r requirements.txt
 
 ## Run the Program
 
-Execute the script to view the effects:
-
-`python main.py`
+Execute the script to view the effects: `python main.py`
 
 Inside `main.py`, you can toggle between different effects:
 
@@ -56,7 +54,25 @@ if __name__ == '__main__':
     # qt5_oblique_effect() # View the oblique watermark effect in Qt5
 ```
 
-You can modify the scripts (`screen_watermark_qt5.py` and `screen_watermark_tkinter.py`) to suit your needs.
+Scripts like `screen_watermark_qt5.py` and `screen_watermark_tkinter.py` can be modified according to your needs.
+
+## Packaging with PyInstaller
+
+To create an executable file using PyInstaller, use the following command:
+
+```
+pyinstaller -w -F -i "C:\Users\administrator\Desktop\watermark\images\logo.ico" --onefile ^
+--add-data "C:\Users\administrator\Desktop\watermark\images;images" ^
+--name "屏幕加水印" --distpath "C:\Users\administrator\Desktop" "C:\Users\administrator\Desktop\watermark\main.py"
+```
+
+This generates a standalone executable with the specified icon and ensures the watermark assets are included.
+
+
+
+
+
+
 
 
 
