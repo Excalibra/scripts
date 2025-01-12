@@ -5,6 +5,10 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPainter, QFont
 import hostname_user_ip_date
 
+'''
+Author: Excalibra
+Homepage: https://github.com/Excalibra
+'''
 
 # Set the Qt platform plugin path
 qt_plugin_path = os.path.join(os.path.expanduser("~"), "AppData", "Local", "Programs", "Python", "Python313", "Lib", "site-packages", "PyQt5", "Qt5", "plugins", "platforms")
