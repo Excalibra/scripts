@@ -45,6 +45,10 @@ pip install -r requirements.txt
 
 Execute the script to view the effects:
 
+`python main.py`
+
+Inside `main.py`, you can toggle between different effects:
+
 ```
 if __name__ == '__main__':
     qt5_effect()  # View the Qt5 implementation
