@@ -41,7 +41,7 @@ First, ensure that PowerShell is enabled on your system:
 <details>
 <summary><b>Click for Details</b></summary>
 
-One-click usage, local download with GB2312 encoding <a href="#">Graphical Version</a>
+One-click usage, local download <a href="#">Graphical Version</a>
 
 <pre><code>
 irm #|iex
