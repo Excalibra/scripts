@@ -16,8 +16,8 @@ Daily operation records of a domain administrator.
 <details>
 <summary><b>Click for details</b></summary>
 Script Locations:
-[https://github.com/Excalibra/scripts/tree/main/d-python-dc](https://github.com/Excalibra/scripts/tree/main/d-python-dc)
-
+https://github.com/Excalibra/scripts/tree/main/d-python-dc
+     
 Illustrated Versions:
 
 * [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments](#)
