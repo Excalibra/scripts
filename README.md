@@ -22,7 +22,7 @@ Script Locations:
      
 Illustrated Versions:
 
-* [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments](https://github.com/Excalibra/scripts/tree/main/d-python-dc/watermark)
+* [Code for adding watermarks to domain controller computer screens, suitable for intranet office environments(https://github.com/Excalibra/scripts/tree/main/d-python-dc/watermark)
 * [DEV - 【PowerShell】Batch add permissions based on text content](#)
 * [DEV - 【PowerShell】Convert folder security permissions to corresponding shared permissions (project)](#)
 * [DEV - Check which shared folders a user has permissions for and remove those permissions](#)
