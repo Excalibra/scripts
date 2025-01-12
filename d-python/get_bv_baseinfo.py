@@ -361,7 +361,30 @@ class BilibiliExcel:
     def save_workbook(workbook):
         workbook.save(Tools.get_save())
 
-draft
+class PrintInfo:
+    # Print basic information
+    @staticmethod
+    def base_message():
+        if 'Windows' == platform.system():
+            os.system('cls')
+        else:
+            os.system('clear')
+
+        text = '''
+        ************************************
+
+        Bilibili Video Analysis v2023.6.26
+        Author: Github.com/Excalibra
+        Project URL: https://github.com/Excalibra/scripts
+
+        Features:
+        1. Analyze and visualize Bilibili video data.
+
+        Disclaimer: For research and learning purposes only.
+
+        ************************************
+        '''
+        print(text.center(50, ' '))
 
 if __name__ == '__main__':
     PrintInfo.base_message()
