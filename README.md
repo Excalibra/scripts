@@ -16,7 +16,7 @@ Daily operation records of a domain administrator.
 <details>
 <summary><b>Click for details</b></summary>
 Script Locations:
-
+[https://github.com/Excalibra/scripts/tree/main/d-python-dc](https://github.com/Excalibra/scripts/tree/main/d-python-dc)
 
 Illustrated Versions:
 
