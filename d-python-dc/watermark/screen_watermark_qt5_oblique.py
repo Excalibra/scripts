@@ -5,6 +5,39 @@ from PyQt5.QtCore import Qt
 from PyQt5.QtGui import QPainter, QFont
 import hostname_user_ip_date
 
+
+# Set the Qt platform plugin path
+qt_plugin_path = os.path.join(os.path.expanduser("~"), "AppData", "Local", "Programs", "Python", "Python313", "Lib", "site-packages", "PyQt5", "Qt5", "plugins", "platforms")
+os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = qt_plugin_path
+
+# Get the computer name and username
+hostname, username = hostname_user_ip_date.get_hostname_username()
+
+# Get the IP address
+compute_addr = hostname_user_ip_date.get_preferred_ip()
+
+# Get the current date
+current_date = hostname_user_ip_date.get_current_date()
+
+# Define the watermark text to display
+show = f'Screen Watermark-{hostname}-{username}-{current_date}-{compute_addr}'
+
+
+class WatermarkWindow(QWidget):
+    def __init__(self, position, pady=0, padx=0, parent=None):
+        super().__init__(parent)
+        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool)
+        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowOpacity(0.4)  # Opacity set to 40%
+
+        # Get screen width and height
+        screen_geometry = QApplication.desktop().screenGeometry()
+        self.setGeometry(screen_geometry)  # Set the window to fullscreen
+        self.position = position
+        self.pady = pady
+        self.padx = padx
+
+
     def paintEvent(self, event):
         """Custom method to draw the watermark text with a 45-degree tilt"""
         painter = QPainter(self)
