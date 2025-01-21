@@ -21,7 +21,7 @@ function sel_man {
     Write-Host " [5] Check information related to active sharing protocols on the host" -ForegroundColor Green
     Write-Host " [6] Check information on computer sleep, restart frequency, abnormal shutdowns, and program crashes" -ForegroundColor Green
     Write-Host " [7] Execute all functions from options 1–6" -ForegroundColor Green -BackgroundColor DarkGray
-    Write-Host ' [8] Generate analysis reports for "Driver Check," "Warnings from the Last Five Days," "Logon/Logoff Activity Records," and "Monthly Threat Summary"' -ForegroundColor Green
+    Write-Host " [8] Generate analysis reports for \"Driver Check,\" \"Warnings from the Last Five Days,\" \"Logon/Logoff Activity Records,\" and \"Monthly Threat Summary\"" -ForegroundColor Green
     Write-Host " [9] View guidance suggestions and development notes `n" -ForegroundColor Green
     Write-Host "`**************************************************************`n" -ForegroundColor Green
 
@@ -66,7 +66,7 @@ function dev_man {
     Write-Host " 1. Information: Represents normal operational behavior or slight changes in system state, but does not indicate any issues or errors."
     Write-Host " 2. Warning: Indicates an existing problem or a potential error, serving as an early warning."
     Write-Host " 3. Error: Signifies that an operation or task failed to complete or was completed incorrectly, requiring attention.`n"
-    Write-Host 'In Windows events, "Success Audit" and "Failure Audit" are not reported as event levels but are categorized as event classifications or sources.'
+    Write-Host "In Windows events, \"Success Audit\" and \"Failure Audit\" are not reported as event levels but are categorized as event classifications or sources."
     Write-Host "Event IDs correspond to multiple different categories of logs, and each category has its own level-specific details for locating issues.`n"
 
     Write-Host "#Logs · Program Identifiers `n" -ForegroundColor Yellow
@@ -95,8 +95,8 @@ function dev_man {
     Write-Host "1. Event IDs 6005, 6006, and 557 cannot precisely determine the startup and shutdown times. 6005 and 6006 only record the EventLog service start and stop events, respectively."
     Write-Host "2. These events log the operational state of the system but do not capture the actual startup and shutdown times."
     Write-Host "3. Event 557, while it signifies that the OS has successfully started, is noteworthy for the following:"
-    Write-Host '   "Active" indicates the system is in an active state, which might include running applications, processing tasks, or waiting for user input.'
-    Write-Host '   Therefore, "Active" during startup could be triggered by certain services or applications automatically invoked by the OS, such as unlocking the lock screen.'
+    Write-Host "   \"Active\" indicates the system is in an active state, which might include running applications, processing tasks, or waiting for user input."
+    Write-Host "   Therefore, \"Active\" during startup could be triggered by certain services or applications automatically invoked by the OS, such as unlocking the lock screen."
     Write-Host "4. Events 12 and 13 in the System log are explicitly defined by Windows as system startup and shutdown events."
     Write-Host " "
     Write-Host "**Note: The accuracy of this method depends on the logging level of the OS and the size limitations of the log files.**" -ForegroundColor Yellow
@@ -120,11 +120,11 @@ function dev_man {
     Write-Host " "
     Write-Host "Static IP, Subnet Mask, Gateway" -ForegroundColor Yellow
     Write-Host " "
-    Write-Host 'netsh interface ip set address "Ethernet" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
+    Write-Host "netsh interface ip set address \"Ethernet\" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
     Write-Host " "
-    Write-Host "Static DNS Settings" -ForegroundColor Yellow
+    Write-Host \"Static DNS Settings\" -ForegroundColor Yellow
     Write-Host `
-        '
+        "
     netsh interface ip set dns "Ethernet" static 208.67.222.222 primary && netsh interface ip add dns "Ethernet" 114.114.114.114
     ' -ForegroundColor Green
 
@@ -141,11 +141,32 @@ function dev_man {
     Write-Host "4. Enable SMB1:" -ForegroundColor Yellow -NoNewline
     Write-Host 'reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SMB1" /t REG_DWORD /d 1 /f' -ForegroundColor Green
     Write-Host "5. SMB Drive Mapping:" -ForegroundColor Yellow -NoNewline
-    Write-Host 'net use * \\192.168.0.33\漏洞补丁 /user:test 123456 /persistent:yes' -ForegroundColor Green
+    Write-Host 'net use * \\192.168.0.33\VulnerabilityPatch /user:test 123456 /persistent:yes' -ForegroundColor Green
     Write-Host "6. Silent Software Installation:" -ForegroundColor Yellow -NoNewline; Write-Host 'C:\path\your software\Setup.exe /s /qn' -ForegroundColor Green
     Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
     Write-Host `
         '
+        
+    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary && netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
+    Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
+    Write-Host "netsh interface ip set address \"Ethernet\" source=dhcp" -ForegroundColor Green
+    Write-Host "netsh interface ip set dns \"Ethernet\" dhcp" -ForegroundColor Green
+    Write-Host "`n#Desktop Technology · System Setup`n" -ForegroundColor Cyan
+    Write-Host "1. System/Office Activation:" -ForegroundColor Yellow -NoNewline; Write-Host "powershell -c \"irm https://massgrave.dev/get|iex\"" -ForegroundColor Green
+    Write-Host "2. Disable Firewall:" -ForegroundColor Yellow -NoNewline; Write-Host "netsh advfirewall set allprofiles state off" -ForegroundColor Green
+    Write-Host "3. Disable UAC:" -ForegroundColor Yellow -NoNewline
+    Write-Host "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" /v \"EnableLUA\" /t REG_DWORD /d 0 /f" -ForegroundColor Green
+    Write-Host "4. Enable SMB1:" -ForegroundColor Yellow -NoNewline
+    Write-Host "reg add \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters\" /v \"SMB1\" /t REG_DWORD /d 1 /f" -ForegroundColor Green
+    Write-Host "5. SMB Drive Mapping:" -ForegroundColor Yellow -NoNewline
+    Write-Host "net use * \\\\192.168.0.33\\漏洞补丁 /user:test 123456 /persistent:yes" -ForegroundColor Green
+    Write-Host "6. Silent Software Installation:" -ForegroundColor Yellow -NoNewline; Write-Host "C:\\path\\your software\\Setup.exe /s /qn" -ForegroundColor Green
+    Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
+        
+        
+        
+        
+        
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{21EC2020-3AEA-1069-A2DD-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}" /t REG_DWORD /d 0 /f
