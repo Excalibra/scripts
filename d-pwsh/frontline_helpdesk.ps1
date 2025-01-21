@@ -394,16 +394,20 @@ function dev_man {
 
 "@ -ForegroundColor DarkGreen    
 
-# ------- Countdown
+    # ------- Countdown
 
-# Let's use a two-digit format as a compromise, applied when there are less than 100 seconds remaining, or when it reaches 1 minute.
-# $t = 11
-# while ($t -ge 0) {
-#     Write-Host ($t.ToString("D2")) -NoNewline
-#     Start-Sleep -Seconds 1
-#     Write-Host -NoNewline "`b`b`b`r"
-#     $t--
-# }
+    # Let's use a two-digit format as a compromise, applied when there are less than 100 seconds remaining, or when it reaches 1 minute.
+    # $t = 11
+    # while ($t -ge 0) {
+    #     Write-Host ($t.ToString("D2")) -NoNewline
+    #     Start-Sleep -Seconds 1
+    #     Write-Host -NoNewline "`b`b`b`r"
+    #     $t--
+    # }
+
+    #>
+
+}
 
 # Check Hostname, System Installation Date, Boot Time, Uptime, and System Architecture
 function check_sys {
