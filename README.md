@@ -44,8 +44,7 @@ First, ensure that PowerShell is enabled on your system:
 One-click usage, local download <a href="#">Graphical Version</a>
 
 <pre><code>
-irm #|iex
-</code></pre>
+irm https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-pwsh/frontline_helpdesk.ps1|iex</code></pre>
 
 Feature Overview:
 
