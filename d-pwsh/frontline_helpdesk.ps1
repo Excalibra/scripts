@@ -123,7 +123,8 @@ function dev_man {
     Write-Host "netsh interface ip set address \"Ethernet\" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
     Write-Host " "
     Write-Host \"Static DNS Settings\" -ForegroundColor Yellow
-    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary; netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
+    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary" -ForegroundColor Green
+    Write-Host "netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
 
     Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
     Write-Host 'netsh interface ip set address "Ethernet" source=dhcp' -ForegroundColor Green
@@ -170,6 +171,8 @@ function dev_man {
         " -ForegroundColor DarkYellow
 
     Write-Host "8. Check IP Address in PE Environment:" -ForegroundColor Yellow
+    Write-Host "REG LOAD HKLM\TempLookIp C:\Windows\System32\config\SYSTEM"
+    Write-Host "REG QUERY HKLM\TempLookIp\ControlSet001\services\Tcpip\Parameters\interfaces /s" -ForegroundColor DarkYellow
     Write-Host `
         '
         REG LOAD HKLM\TempLookIp C:\Windows\System32\config\SYSTEM & REG QUERY HKLM\TempLookIp\ControlSet001\services\Tcpip\Parameters\interfaces /s
@@ -295,7 +298,7 @@ function dev_man {
     Write-Host `
         "
         For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/
-        ' -ForegroundColor Green
+    Write-Host "For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/" -ForegroundColor Green
 
     Write-Host `
         '
@@ -962,7 +965,8 @@ function shoudong_check {
 }
 
 # Generate Baseline Report
-function try_csv_xlsx {
+    Write-Host "### Generating 'Device Information', 'Event Summary', 'Activity Records', and 'Windows Defender Threat Overview' analysis reports ###" -ForegroundColor Cyan
+}
 
     Write-Host " "
     Write-Host "### Generating "Device Information", "Event Summary", "Activity Records", and "Windows Defender Threat Overview" analysis reports ###' -ForegroundColor Cyan; Write-Host " "
