@@ -44,7 +44,7 @@ First, ensure that PowerShell is enabled on your system:
 One-click usage, local download <a href="#">Graphical Version</a>
 
 <pre><code>
-irm https://ghfast.top/https://raw.githubusercontent.com/hoochanlon/scripts/main/d-pwsh/frontline_helpdesk.ps1|iex</code></pre>
+irm #|iex</code></pre>
 
 Feature Overview:
 
