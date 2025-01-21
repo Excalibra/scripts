@@ -142,7 +142,7 @@ function dev_man {
     Write-Host "6. Silent Software Installation:" -ForegroundColor Yellow -NoNewline; Write-Host 'C:\path\your software\Setup.exe /s /qn' -ForegroundColor Green
     Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
     Write-Host `
-        '
+        "
         
     Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary && netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
     Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
@@ -161,14 +161,13 @@ function dev_man {
     Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
         
         
-        
-        
+          
         
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{21EC2020-3AEA-1069-A2DD-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}" /t REG_DWORD /d 0 /f
         reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f
-        ' -ForegroundColor DarkYellow
+        " -ForegroundColor DarkYellow
 
     Write-Host "8. Check IP Address in PE Environment:`n" -ForegroundColor Yellow
     Write-Host `
@@ -212,7 +211,7 @@ function dev_man {
 
     Write-Host "`nSet AC and DC to zero for hibernation, sleep, and disable hibernation. (AC: connected to power; DC: using battery)`n" -ForegroundColor Yellow;
     Write-Host `
-        '
+        "
         # Set AC and DC to zero for hibernation
         ' -NoNewline
     Write-Host `
@@ -271,7 +270,7 @@ function dev_man {
     Write-Host "`n# Supplement · Shared Services Explanation `n" -ForegroundColor Cyan
 
     Write-Host "`n Unlike port traffic monitoring and analysis, this shared service detection is primarily targeted at detecting hosts from colleagues in departments like non-information quality or application development within a local area network. Thus, it is easier to detect suspicious hosts.`n" -ForegroundColor Yellow
-    Write-Host 'Additionally, HTTP is more complex and professional compared to SMB and FTP, so it is not included in the detection scope.' -ForegroundColor Yellow; Write-Host "`nSummary of SMB shares:"
+    Write-Host "Additionally, HTTP is more complex and professional compared to SMB and FTP, so it is not included in the detection scope.' -ForegroundColor Yellow; Write-Host "`nSummary of SMB shares:"
     Write-Host '1. ADMIN$ represents the shared directory of the Windows operating system installation directory (usually C:\Windows). This share is accessible only by administrator accounts for remote management operations.'
     Write-Host '2. C$ represents the shared directory of the entire system drive (usually C:\). This share allows users with administrator privileges to access the root directory of the system over the network.'
     Write-Host '3. IPC$ is a special share that allows users to connect without authentication. This share may be abused for unauthorized access.'
@@ -281,7 +280,7 @@ function dev_man {
     Write-Host "`n# Supplement · Windows Defender Documentation `n" -ForegroundColor Cyan
 
     Write-Host `
-        '
+        "
         * https://learn.microsoft.com/en-us/previous-versions/windows/desktop/defender/msft-mpthreat
         * https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
         ' -ForegroundColor Yellow
@@ -294,7 +293,7 @@ function dev_man {
     Write-Host "`n# Other · New Discoveries `n" -ForegroundColor Cyan
 
     Write-Host `
-        '
+        "
         For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/
         ' -ForegroundColor Green
 
@@ -399,7 +398,7 @@ function dev_man {
                                               _,..._,m,      |,
                                            ,/'      '"";     | |,
                                           /             ".
-                                        ,'mmmMMMMmm.      \  -|-_"
+                                        ,mmmMMMMmm.      \  -|-_"
                                       _/-"^^^^^"""%#%mm,   ;  | _ o
                                 ,m,_,'              "###)  ;,
                                (###%                 \#/  ;##mm.
@@ -408,7 +407,7 @@ function dev_man {
                                 _; (#\"//     \\"/#)  ;  ,/
                                @##\ \##/   =   `"=" ,;mm/
                                `\##>.____,...,____,<####@
-                                                     ""'     m1a
+                                                     """     m1a
 
 "@ -ForegroundColor DarkGreen    
 
@@ -966,7 +965,7 @@ function shoudong_check {
 function try_csv_xlsx {
 
     Write-Host " "
-    Write-Host '### Generating "Device Information", "Event Summary", "Activity Records", and "Windows Defender Threat Overview" analysis reports ###' -ForegroundColor Cyan; Write-Host " "
+    Write-Host "### Generating "Device Information", "Event Summary", "Activity Records", and "Windows Defender Threat Overview" analysis reports ###' -ForegroundColor Cyan; Write-Host " "
 
     # Check if PowerShell version supports ImportExcel module
     if ($PSVersionTable.PSVersion.Major -lt 5) {
