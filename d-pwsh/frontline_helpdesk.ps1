@@ -123,10 +123,7 @@ function dev_man {
     Write-Host "netsh interface ip set address \"Ethernet\" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
     Write-Host " "
     Write-Host \"Static DNS Settings\" -ForegroundColor Yellow
-    Write-Host `
-        "
-    netsh interface ip set dns "Ethernet" static 208.67.222.222 primary && netsh interface ip add dns "Ethernet" 114.114.114.114
-    ' -ForegroundColor Green
+    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary && netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
 
     Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
     Write-Host 'netsh interface ip set address "Ethernet" source=dhcp' -ForegroundColor Green
