@@ -123,7 +123,7 @@ function dev_man {
     Write-Host "netsh interface ip set address \"Ethernet\" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
     Write-Host " "
     Write-Host \"Static DNS Settings\" -ForegroundColor Yellow
-    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary && netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
+    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary; netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
 
     Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
     Write-Host 'netsh interface ip set address "Ethernet" source=dhcp' -ForegroundColor Green
@@ -169,7 +169,7 @@ function dev_man {
         reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f
         " -ForegroundColor DarkYellow
 
-    Write-Host "8. Check IP Address in PE Environment:`n" -ForegroundColor Yellow
+    Write-Host "8. Check IP Address in PE Environment:" -ForegroundColor Yellow
     Write-Host `
         '
         REG LOAD HKLM\TempLookIp C:\Windows\System32\config\SYSTEM & REG QUERY HKLM\TempLookIp\ControlSet001\services\Tcpip\Parameters\interfaces /s
@@ -1066,7 +1066,6 @@ function try_csv_xlsx {
     else {
         Write-Host 'No threats detected. Possible reasons: third-party antivirus taking over or Windows Defender not enabled.' -ForegroundColor Magenta
     }
-}
 
 # Threat categories in the last 30 days
 $result = Get-MpThreat `
@@ -1098,7 +1097,7 @@ function select_option {
 
         # Virtual key codes and corresponding keyboard keys reference
         # https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
-        $key = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown").VirtualKeyCode
+        $key = $host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown").VirtualKeyCode
 
         switch ($key) {
             { $_ -in 49, 97 } {
