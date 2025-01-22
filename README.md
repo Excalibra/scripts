@@ -65,7 +65,7 @@ By the way
 Linux baseline check (PR) can be found at: <a href="https://github.com/al0ne/LinuxCheck">al0ne/LinuxCheck</a>. For Macs, maintaining these security services is not suitable for small and medium-sized businesses.
 
 <ul>
-<li><a href="https://www.apple.com.cn/business/docs/site/Mac_Deployment_Overview.pdf">Apple - Mac System Deployment</a></li>
+<li><a href="https://www.apple.com/business/docs/site/Mac_Deployment_Overview.pdf">Apple - Mac System Deployment</a></li>
 <li><a href="#">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
 </ul>
 
