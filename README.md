@@ -69,7 +69,7 @@ Linux baseline check (PR) can be found at: <a href="https://github.com/al0ne/Lin
 <li><a href="https://excalibra.github.io/2025/01-22/01">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
 </ul>
 
-In the broader context, this article <a href="#">CSDN - Three Methods to Manage Mac Computers in Enterprises</a> mentions management strategies that are considered effective, but compared to Windows, they are still not sufficient.
+In the broader context, this article <a href="https://excalibra.github.io/2025/01-22/01">CSDN - Three Methods to Manage Mac Computers in Enterprises</a> mentions management strategies that are considered effective, but compared to Windows, they are still not sufficient.
 
 </details>
 
