@@ -62,6 +62,7 @@ function dev_man {
     Write-Host "`n* Registry Analysis and Editing Tools:" -ForegroundColor Yellow
     Write-Host "   Registry Analysis Tool:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.nirsoft.net/utils/regscanner.html" -ForegroundColor Blue
     Write-Host "   Registry Editing Tool:" -ForegroundColor Yellow -nonewline; Write-Host "https://registry-finder.com" -ForegroundColor Blue
+    
     Write-Host "`n#Logs · Event Levels:`n" -ForegroundColor Yellow
     Write-Host " 1. Information: Represents normal operational behavior or slight changes in system state, but does not indicate any issues or errors."
     Write-Host " 2. Warning: Indicates an existing problem or a potential error, serving as an early warning."
