@@ -41,7 +41,7 @@ First, ensure that PowerShell is enabled on your system:
 <details>
 <summary><b>Click for Details</b></summary>
 
-One-click usage, local download <a href="#">Graphical Version</a>
+One-click usage, local download <a href="https://dev.to/excalibra/script-for-checking-windows-baselines-c3i">Graphical Version</a>
 
 <pre><code>
 irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-pwsh/frontline_helpdesk.ps1|iex</code></pre>
