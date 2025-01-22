@@ -4,7 +4,7 @@ function sel_man {
     # Enable PowerShell: Set-ExecutionPolicy RemoteSigned
     # Disable PowerShell: Set-ExecutionPolicy Restricted
     # Alias Query: Get-Alias | Where-Object { $_.Definition -eq 'ForEach-Object' }
-
+    
     Clear-Host
     Write-Host "`n*************************************************************" -ForegroundColor Green
     Write-Host "`nWarm Reminder:`n" -ForegroundColor Green
@@ -46,7 +46,7 @@ function dev_man {
     Write-Host "* Present indicates whether the device exists on the system."
     Write-Host "* Service refers to the name of the Windows service responsible for managing the device or driver."
     Write-Host "* Problem: CM_PROB_PHANTOM indicates that the device is marked by the operating system as a "phantom" device, meaning it is damaged, missing, or improperly installed."
-    Write-Host "* Problem: CM_PROB_NONE status means it should function normally without any faults or errors.`n"
+    Write-Host "* Problem: CM_PROB_NONE  means it should function normally without any faults or errors.`n"
     Write-Host "For details, see:" -ForegroundColor Yellow -NoNewline; Write-Host "https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/device-manager-problem-codes" -ForegroundColor Blue
     
     Write-Host "`n#Registry · Registry Overview Explanation `n" -ForegroundColor Yellow
@@ -113,7 +113,7 @@ function dev_man {
     Write-Host "* For other DLL issues, install the VC++ runtime library to resolve initial problems:" -ForegroundColor Yellow
     Write-Host "  * " -ForegroundColor Yellow -NoNewline; Write-Host "https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170 `n" -ForegroundColor Blue
 
-    Write-Host "#Desktop Technology · Network Configuration`n" -ForegroundColor Cyan
+    Write-Host "#Desktop Technology · Network Configuration`n"  -ForegroundColor  Cyan
 
     Write-Host "Backup IP settings to Desktop as ip_config_bak.txt" -ForegroundColor Yellow
     Write-Host " "
@@ -121,66 +121,46 @@ function dev_man {
     Write-Host " "
     Write-Host "Static IP, Subnet Mask, Gateway" -ForegroundColor Yellow
     Write-Host " "
-    Write-Host "netsh interface ip set address \"Ethernet\" static 192.168.1.1 255.255.255.0 192.168.1.11' -ForegroundColor Green
+    Write-Host 'netsh interface ip set address "Ethernet" static 192.168.1.1 255.255.255.0  192.168.1.11'  -ForegroundColor Green
     Write-Host " "
-    Write-Host \"Static DNS Settings\" -ForegroundColor Yellow
-    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary" -ForegroundColor Green
-    Write-Host "netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
+    Write-Host "Static DNS Settings" -ForegroundColor Yellow
+    Write-host `
+        '
+    netsh interface ip set dns "Ethernet" static 208.67.222.222 primary && netsh interface ip add dns "Ethernet" 114.114.114.114
+    ' -ForegroundColor Green
 
-    Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
-    Write-Host 'netsh interface ip set address "Ethernet" source=dhcp' -ForegroundColor Green
+    Write-host "`nAutomatic Network Configuration`n"  -ForegroundColor Yellow
+    Write-Host 'netsh interface ip set address "Ethernet" source=dhcp'  -ForegroundColor Green
     Write-Host 'netsh interface ip set dns "Ethernet" dhcp' -ForegroundColor Green
 
-    Write-Host "`n#Desktop Technology · System Setup`n" -ForegroundColor Cyan
+    Write-host "`n#Desktop Technology · System Setup`n"  -ForegroundColor Cyan
 
-    Write-Host "1. System/Office Activation:" -ForegroundColor Yellow -NoNewline; Write-Host 'powershell -c "irm https://massgrave.dev/get|iex"' -ForegroundColor Green
-    Write-Host "2. Disable Firewall:" -ForegroundColor Yellow -NoNewline; Write-Host 'netsh advfirewall set allprofiles state off' -ForegroundColor Green
-    Write-Host "3. Disable UAC:" -ForegroundColor Yellow -NoNewline
-    Write-Host 'reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d 0 /f' -ForegroundColor Green
-    Write-Host "4. Enable SMB1:" -ForegroundColor Yellow -NoNewline
-    Write-Host 'reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SMB1" /t REG_DWORD /d 1 /f' -ForegroundColor Green
-    Write-Host "5. SMB Drive Mapping:" -ForegroundColor Yellow -NoNewline
-    Write-Host 'net use * \\192.168.0.33\VulnerabilityPatch /user:test 123456 /persistent:yes' -ForegroundColor Green
-    Write-Host "6. Silent Software Installation:" -ForegroundColor Yellow -NoNewline; Write-Host 'C:\path\your software\Setup.exe /s /qn' -ForegroundColor Green
-    Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
+    Write-Host "1. System/Office Activation：" -ForegroundColor Yellow -NoNewline; Write-Host 'powershell -c "irm https://massgrave.dev/get|iex"' -ForegroundColor Green
+    Write-host "2. Disable Firewall：" -ForegroundColor Yellow -NoNewline; Write-Host 'netsh advfirewall set allprofiles state off'  -ForegroundColor Green
+    Write-host "3. Disable UAC：" -ForegroundColor Yellow -NoNewline;
+    Write-host 'reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableLUA" /t REG_DWORD /d 0 /f' -ForegroundColor Green
+    Write-host "4. Enable SMB1：" -ForegroundColor Yellow -NoNewline;
+    Write-Host 'reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\LanmanServer\Parameters" /v "SMB1" /t REG_DWORD /d 1 /f'  -ForegroundColor Green
+    Write-host "5. SMB Drive Mapping：" -ForegroundColor Yellow -NoNewline;
+    Write-Host 'net use * \\192.168.0.33\VulnerabilityPatch /user:test 123456 /persistent:yes'  -ForegroundColor Green
+    Write-host "6. Silent Software Installation：" -ForegroundColor Yellow -NoNewline; Write-Host 'C:\path\your software\Setup.exe /s /qn' -ForegroundColor Green
+    Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below)"  -ForegroundColor Yellow
     Write-Host `
-        "
-        
-    Write-Host "netsh interface ip set dns \"Ethernet\" static 208.67.222.222 primary && netsh interface ip add dns \"Ethernet\" 114.114.114.114" -ForegroundColor Green
-    Write-Host "`nAutomatic Network Configuration`n" -ForegroundColor Yellow
-    Write-Host "netsh interface ip set address \"Ethernet\" source=dhcp" -ForegroundColor Green
-    Write-Host "netsh interface ip set dns \"Ethernet\" dhcp" -ForegroundColor Green
-    Write-Host "`n#Desktop Technology · System Setup`n" -ForegroundColor Cyan
-    Write-Host "1. System/Office Activation:" -ForegroundColor Yellow -NoNewline; Write-Host "powershell -c \"irm https://massgrave.dev/get|iex\"" -ForegroundColor Green
-    Write-Host "2. Disable Firewall:" -ForegroundColor Yellow -NoNewline; Write-Host "netsh advfirewall set allprofiles state off" -ForegroundColor Green
-    Write-Host "3. Disable UAC:" -ForegroundColor Yellow -NoNewline
-    Write-Host "reg add \"HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\" /v \"EnableLUA\" /t REG_DWORD /d 0 /f" -ForegroundColor Green
-    Write-Host "4. Enable SMB1:" -ForegroundColor Yellow -NoNewline
-    Write-Host "reg add \"HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LanmanServer\\Parameters\" /v \"SMB1\" /t REG_DWORD /d 1 /f" -ForegroundColor Green
-    Write-Host "5. SMB Drive Mapping:" -ForegroundColor Yellow -NoNewline
-    Write-Host "net use * \\\\192.168.0.33\\漏洞补丁 /user:test 123456 /persistent:yes" -ForegroundColor Green
-    Write-Host "6. Silent Software Installation:" -ForegroundColor Yellow -NoNewline; Write-Host "C:\\path\\your software\\Setup.exe /s /qn" -ForegroundColor Green
-    Write-Host "7. Show 'This PC', Control Panel Icons, and File Extensions (Copy the code below):" -ForegroundColor Yellow
-        
-        
-          
-        
+        '
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{20D04FE0-3AEA-1069-A2D8-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{21EC2020-3AEA-1069-A2DD-08002B30309D}" /t REG_DWORD /d 0 /f
         reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel" /v "{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}" /t REG_DWORD /d 0 /f
         reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v "HideFileExt" /t REG_DWORD /d 0 /f
-        " -ForegroundColor DarkYellow
+        ' -ForegroundColor DarkYellow
 
-    Write-Host "8. Check IP Address in PE Environment:" -ForegroundColor Yellow
-    Write-Host "REG LOAD HKLM\TempLookIp C:\Windows\System32\config\SYSTEM"
-    Write-Host "REG QUERY HKLM\TempLookIp\ControlSet001\services\Tcpip\Parameters\interfaces /s" -ForegroundColor DarkYellow
+    Write-Host "8. Check IP Address in PE Environment:`n"  -ForegroundColor Yellow
     Write-Host `
         '
         REG LOAD HKLM\TempLookIp C:\Windows\System32\config\SYSTEM & REG QUERY HKLM\TempLookIp\ControlSet001\services\Tcpip\Parameters\interfaces /s
-        ' -ForegroundColor DarkYellow
+        '  -ForegroundColor DarkYellow
 
     Write-Host " "
-    Write-Host "9. IE Hijacking Prevention (For Windows 10, it works fine as is. For Windows 11, you need to first use the 'Little Fish IE Repair Tool' to restore the IE11 shortcut, then use this code.):`n" -ForegroundColor Yellow
+    Write-Host "9. IE Hijacking Prevention（For Windows 10，it works fine as is. For Windows 11，you need to first use the Little Fish IE Repair Tool to restore the IE11 shortcut, then use this code.）:`n" -ForegroundColor Yellow
     Write-Host `
         '
         reg add "HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main" /v "Enable Browser Extensions" /t REG_SZ /d "NO" /f
@@ -205,23 +185,24 @@ function dev_man {
     Write-Host "    reg add "HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\explorer" /v DisableSearchBoxSuggestions /t reg_dword /d 1 /f" -ForegroundColor DarkYellow
 
     Write-Host " "
-    Write-Host "`n#Desktop Technology · Hibernation and Sleep Topic`n"  -ForegroundColor Cyan
+    Write-Host "`n#Desktop Technology · Hibernation and Sleep Topic`n"  -ForegroundColor  Cyan
 
-    Write-Host "Difference between Hibernation and Sleep: `n" -ForegroundColor Yellow
+    Write-Host "Difference between Hibernation and Sleep:`n" -ForegroundColor Yellow
     Write-Host "* Hibernation: Saves the system state to the hard drive, turns off all devices, and when hibernating, it doesn't consume power like shutting down. Upon waking up, the system restores data from the hard drive." -ForegroundColor Yellow
-    Write-Host "* Sleep: Saves the system state to memory, turns off all devices, and the system enters a low-power state. It wakes up quickly, but if the power supply is interrupted (like a power strip unplugged), sleep cannot save data."`n" -ForegroundColor Yellow
-    Write-Host 'For detailed concepts, refer to "Blog Garden - The Difference Between Computer Sleep (sleep) and Hibernate (Hibernate), and Hibernate Function Settings":' -ForegroundColor Yellow
-    Write-Host "    https://excalibra.github.io/2025/01-19/01#more" -ForegroundColor Blue
+    Write-Host "* Sleep: Saves the system state to memory, turns off all devices, and the system enters a low-power state. It wakes up quickly, but if the power supply is interrupted (like a power strip unplugged), sleep cannot save data.`n" -ForegroundColor Yellow
+    Write-Host 'For detailed concepts, "The Difference Between Computer Sleep (sleep) and Hibernate (Hibernate), and Hibernate Function Settings":' -ForegroundColor Yellow
+    Write-Host "    https://excalibra.github.io/2025/01-19/01" -ForegroundColor Blue
 
-    Write-Host "`nSet AC and DC to zero for hibernation, sleep, and disable hibernation. (AC: connected to power; DC: using battery)`n" -ForegroundColor Yellow;
+    Write-Host "`nSet AC and DC to zero for hibernation, sleep, and disable hibernation.（AC: connected to power; DC: using battery）`n" -ForegroundColor Yellow;
     Write-Host `
-        "
+        '
         # Set AC and DC to zero for hibernation
         ' -NoNewline
     Write-Host `
         '
         powercfg -change -standby-timeout-ac 0
         powercfg -change -hibernate-timeout-ac 0
+
         ' -ForegroundColor DarkYellow
     Write-Host `
         '
@@ -231,6 +212,7 @@ function dev_man {
         '
         powercfg -change -standby-timeout-dc 0
         powercfg -change -hibernate-timeout-dc 0
+
         ' -ForegroundColor DarkYellow
     Write-Host `
         '
@@ -241,7 +223,7 @@ function dev_man {
         powercfg -h off
         ' -ForegroundColor DarkYellow
 
-    Write-Host "`nSet screen display timeout for AC and DC (default unit is seconds):`n" -ForegroundColor Yellow;
+    Write-Host "`nSet screen display timeout for AC and DC (default unit is seconds)：`n" -ForegroundColor Yellow;
     Write-Host `
         '
         # AC: connected to power
@@ -264,27 +246,27 @@ function dev_man {
     Write-Host "    https://learn.microsoft.com/en-gb/troubleshoot/windows-client/networking/power-management-on-network-adapter" -ForegroundColor Blue
     Write-Host "    https://learn.microsoft.com/en-gb/windows-hardware/design/device-experiences/modern-standby-sleepstudy" -ForegroundColor Blue
     Write-Host " "
-    Write-Host 'To cancel the "Allow the computer to turn off this device to save power" setting (check the default value 0 for enable, uncheck 24 for disable)' -ForegroundColor Yellow
+    Write-Host 'To cancel the "Allow the computer to turn off this device to save power" setting （check the default value 0 for enable；uncheck 24 for disable）"' -ForegroundColor Yellow
     Write-Host " "
     Write-Host `
         '
         reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4D36E972-E325-11CE-BFC1-08002bE10318}\0001" /v PnPCapabilities /t REG_DWORD /d 24 /f
         ' -ForegroundColor DarkYellow
 
-    Write-Host "`n# Supplement · Shared Services Explanation `n" -ForegroundColor Cyan
+    Write-Host "`n#Supplement · Shared Services Explanation `n" -ForegroundColor Cyan
 
     Write-Host "`n Unlike port traffic monitoring and analysis, this shared service detection is primarily targeted at detecting hosts from colleagues in departments like non-information quality or application development within a local area network. Thus, it is easier to detect suspicious hosts.`n" -ForegroundColor Yellow
-    Write-Host "Additionally, HTTP is more complex and professional compared to SMB and FTP, so it is not included in the detection scope.' -ForegroundColor Yellow; Write-Host "`nSummary of SMB shares:"
+    Write-Host 'Additionally, HTTP is more complex and professional compared to SMB and FTP, so it is not included in the detection scope.' -ForegroundColor Yellow; Write-Host "`nSummary of SMB shares:"
     Write-Host '1. ADMIN$ represents the shared directory of the Windows operating system installation directory (usually C:\Windows). This share is accessible only by administrator accounts for remote management operations.'
     Write-Host '2. C$ represents the shared directory of the entire system drive (usually C:\). This share allows users with administrator privileges to access the root directory of the system over the network.'
     Write-Host '3. IPC$ is a special share that allows users to connect without authentication. This share may be abused for unauthorized access.'
     Write-Host ' 3.1 This means attackers can use tools and techniques (such as port scanning, remote desktop connections, etc.) to access the IPC$ share and attempt to exploit system vulnerabilities.'
     Write-Host ' 3.2 Disabling IPC$ might negatively affect other services such as file sharing, Active Directory (AD), remote management tools, system backups, and restores.'
 
-    Write-Host "`n# Supplement · Windows Defender Documentation `n" -ForegroundColor Cyan
+    Write-Host "`n#Supplement · Windows Defender Documentation`n" -ForegroundColor Cyan
 
     Write-Host `
-        "
+        '
         * https://learn.microsoft.com/en-us/previous-versions/windows/desktop/defender/msft-mpthreat
         * https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
         ' -ForegroundColor Yellow
@@ -294,19 +276,18 @@ function dev_man {
         Detailed property information for Get-MpThreatDetection can be found at: https://powershell.one/wmi/root/microsoft/windows/defender/msft_mpthreatdetection
         ' -ForegroundColor Green
 
-    Write-Host "`n# Other · New Discoveries `n" -ForegroundColor Cyan
-
-    Write-Host `
-        "
-        For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/
-    Write-Host "For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/" -ForegroundColor Green
+    Write-Host "`n#Other · New Discoveries`n" -ForegroundColor Cyan
 
     Write-Host `
         '
-        * For software certificate restrictions, refer to: https://baijiahao.baidu.com/s?id=1669306160103456552&wfr=spider&for=pc
+        For information on image hijacking, refer to: https://attack.mitre.org/techniques/T1546/012/
+        ' -ForegroundColor Green
+
+        Write-Host `
+        '
         * And the test certificates in the certificate store: https://github.com/the1812/Malware-Patch/tree/master/src/MalwarePatch/Certificates
         ' -ForegroundColor Green
-    Write-Host `
+        Write-Host `
         '
         For authorization checks on system32 files, under normal circumstances, these four should be in a Deny state. If other items are found, there may be suspicious entries.
         Microsoft.PowerShell.Core\FileSystem::C:\Windows\System32\FxsTmp
@@ -316,7 +297,7 @@ function dev_man {
         Virtual machines do not have the FxsTmp entry. Be sure to review related information and examine the role of suspicious DLL files marked as Deny.
         ' -ForegroundColor Green
 
-    Write-Host "`n# Conclusion `n" -ForegroundColor Cyan
+    Write-Host "`n#Conclusion`n" -ForegroundColor  Cyan
 
     Write-Host "PowerShell is a powerful scripting language that enables a variety of system-level operations and is highly beneficial for automating the management of Windows systems."
     Write-Host "The baseline check script implemented with PowerShell can check system basics such as system information, network connections, printer status, firewall status, disk, CPU, and memory information.`n"
@@ -327,33 +308,34 @@ function dev_man {
     Write-Host "3. Documentation and verification: keywords, case studies, debugging, experiments, and repeated references.`n"
     Write-Host "For questions or concerns, feel free to contact the author at excalibra@proton.me and visit the GitHub project at:" -NoNewline -ForegroundColor Yellow
     Write-Host "https://github.com/Excalibra/scripts " -NoNewline -ForegroundColor Blue
-    Write-Host ", and feel free to reach out for consultation or corrections." -ForegroundColor Yellow
+    Write-Host "，and feel free to reach out for consultation or corrections." -ForegroundColor Yellow
 
-    Write-Host "`n# Appendix · IT Operations Technical Analysis Tools`n"  -ForegroundColor  Cyan
+    Write-Host "`n#Appendix · IT Operations Technical Analysis Tools`n"  -ForegroundColor  Cyan
 
     Write-Host "`n* Local Network Analysis Tools:" -ForegroundColor Yellow
-    Write-Host "    advanced-ip-scanner:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.advanced-ip-scanner.com" -ForegroundColor Blue
-    Write-Host "    wireshark:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.wireshark.org" -ForegroundColor Blue
+    Write-Host "    advanced-ip-scanner：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.advanced-ip-scanner.com" -ForegroundColor Blue
+    Write-Host "    wireshark：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.wireshark.org" -ForegroundColor Blue
 
     Write-Host "`n* System Performance Analysis Tools:" -ForegroundColor Yellow
-    Write-Host "   windirstat:" -ForegroundColor Yellow -nonewline; Write-Host "https://windirstat.net" -ForegroundColor Blue
-    Write-Host "   sysinternals:" -ForegroundColor Yellow -nonewline; Write-Host "https://learn.microsoft.com/en-gb/sysinternals/downloads/process-explorer" -ForegroundColor Blue
+    Write-Host "   HWiNFO：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.hwinfo.com" -ForegroundColor Blue
+    Write-Host "   windirstat：" -ForegroundColor Yellow -nonewline; Write-Host "https://windirstat.net" -ForegroundColor Blue
+    Write-Host "   sysinternals：" -ForegroundColor Yellow -nonewline; Write-Host "https://docs.microsoft.com/zh-cn/sysinternals/downloads/process-explorer" -ForegroundColor Blue
 
     Write-Host "`n* PowerShell Module Components:" -ForegroundColor Yellow
     Write-Host "    https://learn.microsoft.com/en-us/powershell/module/activedirectory/?view=windowsserver2022-ps" -ForegroundColor Blue
     Write-Host "    https://www.powershellgallery.com" -ForegroundColor Blue
 
     Write-Host "`n* Registry Analysis Tools:" -ForegroundColor Yellow
-    Write-Host "   admx.help:" -ForegroundColor Yellow -nonewline; Write-Host "https://admx.help" -ForegroundColor Blue
-    Write-Host "   regscanner:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.nirsoft.net/utils/regscanner.html" -ForegroundColor Blue
-    Write-Host "   registry-finder:" -ForegroundColor Yellow -nonewline; Write-Host "https://registry-finder.com" -ForegroundColor Blue
+    Write-Host "   admx.help：" -ForegroundColor Yellow -nonewline; Write-Host "https://admx.help" -ForegroundColor Blue
+    Write-Host "   regscanner：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.nirsoft.net/utils/regscanner.html" -ForegroundColor Blue
+    Write-Host "   registry-finder：" -ForegroundColor Yellow -nonewline; Write-Host "https://registry-finder.com" -ForegroundColor Blue
 
     Write-Host "`n* Event ID Analysis Tools:" -ForegroundColor Yellow
-    Write-Host "    Win10_Events_ID_useful:" -ForegroundColor Yellow -nonewline; Write-Host "https://github.com/Excalibra/scripts/blob/main/AQUICK/BITRH/Win10_Events_ID_useful.xlsx" -ForegroundColor Blue
-    Write-Host "   myeventlog:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.myeventlog.com/search/find" -ForegroundColor Blue
-    Write-Host "   ultimatewindowssecurity:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.ultimatewindowssecurity.com/securitylog/encyclopedia" -ForegroundColor Blue
+    Write-Host "    Win10_Events_ID_useful：" -ForegroundColor Yellow -nonewline; Write-Host "https://github.com/Excalibra/scripts/blob/main/AQUICK/BITRH/Win10_Events_ID_useful.xlsx" -ForegroundColor Blue
+    Write-Host "   myeventlog：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.myeventlog.com/search/find" -ForegroundColor Blue
+    Write-Host "   ultimatewindowssecurity：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.ultimatewindowssecurity.com/securitylog/encyclopedia" -ForegroundColor Blue
 
-    Write-Host "`n# Appendix · Software Analysis Topics:`n" -ForegroundColor  Cyan
+    Write-Host "`n#Appendix · Software Analysis Topics:`n" -ForegroundColor  Cyan
     Write-Host "1. Code Analysis: Software analysis typically involves detailed analysis of the application source code." -ForegroundColor Yellow
     Write-Host "2. Vulnerability Scanning: Vulnerability scanning tools are used to automatically discover security vulnerabilities in software." -ForegroundColor Yellow
     Write-Host "3. Static Analysis: Static analysis refers to analyzing source code to identify potential issues without executing the code." -ForegroundColor Yellow
@@ -362,7 +344,7 @@ function dev_man {
     Write-Host "6. Anti-Cheat Analysis: Anti-cheat analysis involves analyzing games and applications to detect and counteract cheating behaviors." -ForegroundColor Yellow
     Write-Host "7. Security Auditing: Security auditing involves detailed review of software to determine whether it meets specific security standards or regulations." -ForegroundColor Yellow
 
-    Write-Host "`n# Appendix · Information Security Aggregated Resources" -ForegroundColor  Cyan
+    Write-Host "`n#Appendix · Information Security Aggregated Resources" -ForegroundColor  Cyan
     Write-Host " "
     Write-Host "----------------------------------------" -ForegroundColor Yellow
     Write-Host "Search tips: 1. Be clear about your goal; 2. Refine keywords; 3. Look for both positive and negative examples, analyze and compare. For example (and so on):" -ForegroundColor Yellow
@@ -370,20 +352,13 @@ function dev_man {
     Write-Host "----------------------------------------" -ForegroundColor Yellow
     Write-Host " "
 
-    Write-Host "n* Recommended Articles:`n" -ForegroundColor Yellow
-    Write-Host "    [Nanjing Agricultural University - Windows OS Configuration Security Baseline Standards and Operational Guidelines](https://net.njau.edu.cn/__local/3/30/38/FB38F23775A9BC8DCCF498280E2_5EC87E05_98C4A.pdf)" -ForegroundColor Magenta
-    Write-Host "    [freebuf - Everything You Need to Know About GB/T 2.0](https://www.freebuf.com/articles/network/344946.html)" -ForegroundColor Magenta
-
     Write-Host "`n* IT Tech Articles, Forums, and Websites:" -ForegroundColor Yellow
-    Write-Host "   superuser:" -ForegroundColor Yellow -nonewline; Write-Host "https://superuser.com" -ForegroundColor Blue
-    Write-Host "   minitool news:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.minitool.com/news/automatic-sample-submission-off.html" -ForegroundColor Blue
-    Write-Host "   stack overflow:" -ForegroundColor Yellow -nonewline; Write-Host "https://stackoverflow.com" -ForegroundColor Blue
-    Write-Host "   Aliyun Xianzhi Community:" -ForegroundColor Yellow -nonewline; Write-Host "https://xz.aliyun.com/search?keyword=thinkphp" -ForegroundColor Blue
-    Write-Host "   freebuf:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.freebuf.com" -ForegroundColor Blue
-    Write-Host "   Public Opinion Collection System:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.axtx.net" -ForegroundColor Blue
-    Write-Host "   Miscellaneous IT Tech Articles:" -ForegroundColor Yellow -nonewline; Write-Host "https://www.zadmei.com" -ForegroundColor Blue
+    Write-Host "   superuser：" -ForegroundColor Yellow -nonewline; Write-Host "https://superuser.com" -ForegroundColor Blue
+    Write-Host "   minitool news：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.minitool.com/news/automatic-sample-submission-off.html" -ForegroundColor Blue
+    Write-Host "   stack overflow：" -ForegroundColor Yellow -nonewline; Write-Host "https://stackoverflow.com" -ForegroundColor Blue
+    Write-Host "   freebuf：" -ForegroundColor Yellow -nonewline; Write-Host "https://www.freebuf.com" -ForegroundColor Blue
 
-    Write-Host "`n# Appendix · ASCII ART`n" -ForegroundColor  Cyan
+    Write-Host "`n#Appendix · ASCII ART`n" -ForegroundColor  Cyan
     Write-Host " "
     Write-Host "-----------------------------------------------------------------------" -ForegroundColor Yellow
     Write-Host "Generate ASCII Art" -ForegroundColor Yellow
@@ -392,7 +367,6 @@ function dev_man {
     Write-Host "-----------------------------------------------------------------------" -ForegroundColor Yellow
     Write-Host " "
     Write-Host @"
-
                                                              <|/\
                                                               | |,
 
@@ -402,7 +376,7 @@ function dev_man {
                                               _,..._,m,      |,
                                            ,/'      '"";     | |,
                                           /             ".
-                                        ,mmmMMMMmm.      \  -|-_"
+                                        ,'mmmMMMMmm.      \  -|-_"
                                       _/-"^^^^^"""%#%mm,   ;  | _ o
                                 ,m,_,'              "###)  ;,
                                (###%                 \#/  ;##mm.
@@ -411,11 +385,11 @@ function dev_man {
                                 _; (#\"//     \\"/#)  ;  ,/
                                @##\ \##/   =   `"=" ,;mm/
                                `\##>.____,...,____,<####@
-                                                     """     m1a
+                                                     ""'     m1a
 
-"@ -ForegroundColor DarkGreen    
+"@ -ForegroundColor DarkGreen
 
-    # ------- Countdown
+    <# ------- Countdown
 
     # Let's use a two-digit format as a compromise, applied when there are less than 100 seconds remaining, or when it reaches 1 minute.
     # $t = 11
@@ -439,7 +413,7 @@ function check_sys {
 
     Get-ComputerInfo | Select-Object -Property `
         OsRegisteredUser, CsDomain, CsDNSHostName, OsName,
-        OsInstallDate, OsLastBootUpTime, OsUptime, OsArchitecture `
+    OsInstallDate, OsLastBootUpTime, OsUptime, OsArchitecture `
     | Out-Host
 }
 
@@ -454,13 +428,13 @@ function check_ip {
     netsh interface ipv4 show dnsservers "Ethernet"
     Get-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Internet Settings' | Select-Object ProxyEnable
 
-    Write-Host "--- Checking Local Area Network (LAN) connection status ---`n"  -ForegroundColor Yellow
+    Write-Host "--- Checking Local Area Network (LAN) connection  ---`n"  -ForegroundColor Yellow
     $result = Get-NetConnectionProfile | Select-Object -Property Name, InterfaceAlias, NetworkCategory
     if ($result) {
         $result | Out-Host
     }
     else {
-        Write-Host "There is an issue with this network. `n" -ForegroundColor DarkRed
+        Write-Host "There is an issue with this network.`n" -ForegroundColor DarkRed
     }
 
     Write-Host "--- Checking if there have been any recent IP conflicts ---`n"  -ForegroundColor Yellow
@@ -477,7 +451,7 @@ function check_ip {
         $result | Out-Host
     }
     else {
-        Write-Host "No IP conflict events have occurred recently. `n" -ForegroundColor Green
+        Write-Host "No IP conflict events have occurred recently.`n" -ForegroundColor Green
     }
 
     Write-Host "### Basic Network Connectivity Check Completed`n" -ForegroundColor Green
@@ -526,11 +500,11 @@ function check_printer {
     Write-Host "`n### Printer Status Check Completed`n" -ForegroundColor Green
 }
 
+# Check hard disk, CPU, and memory information
 function check_disk_cpu_mem {
 
     # [math]::Round is used to call static methods or properties from the .NET Framework.
     # For more details: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_arithmetic_operators?view=powershell-7.3
-
     Write-Host " "
     Write-Host "### Starting to check disk, CPU, memory, and system drivers ###`n"  -ForegroundColor Cyan
 
@@ -562,7 +536,7 @@ function check_disk_cpu_mem {
     }
 
     Write-Host "--- Checking memory module parameters and types ---`n"  -ForegroundColor Yellow
-    Write-Host "DDR1: Below 400 MHz; DDR2: Below 800 MHz; DDR3: Below 2133 MHz; DDR4: Below 3200 MHz."
+    Write-Host "DDR1: Below 400 MHz, DDR2: Below 800 MHz, DDR3: Below 2133 MHz, DDR4: Below 3200 MHz."
 
     $result = Get-CimInstance -Class Win32_PhysicalMemory |
     Select-Object -Property BankLabel,
@@ -574,6 +548,7 @@ function check_disk_cpu_mem {
     else {
         Write-Host "Unable to retrieve memory module parameters and types`n"  -ForegroundColor Red
     }
+
 
     Write-Host "--- Checking display parameters status ---"  -ForegroundColor Yellow
 
@@ -603,15 +578,15 @@ function check_disk_cpu_mem {
         if ([string]::IsNullOrEmpty($MaxRefreshRate)) { $MaxRefreshRate = "N/A" }
 
         Write-Host " "
-        Write-Host "Graphics Driver: $Name"
-        Write-Host "Driver Version: $DriverVersion"
-        Write-Host "Status: $Status"
-        Write-Host "Video Memory (GB): $AdapterRAM"
-        Write-Host "Platform Compatibility: $AdapterCompatibility"
-        Write-Host "Max Refresh Rate: $MaxRefreshRate"
-        Write-Host "Current Horizontal Resolution: $CurrentHorizontalResolution"
-        Write-Host "Current Vertical Resolution: $CurrentVerticalResolution"
-        Write-Host "Video Mode Description: $VideoModeDescription"
+        Write-Host "Graphics Driver：$Name"
+        Write-Host "Driver Version：$DriverVersion"
+        Write-Host "Status：$Status"
+        Write-Host "Video Memory (GB)：$AdapterRAM"
+        Write-Host "Platform Compatibility：$AdapterCompatibility"
+        Write-Host "Max Refresh Rate：$MaxRefreshRate"
+        Write-Host "Current Horizontal Resolution：$CurrentHorizontalResolution"
+        Write-Host "Current Vertical Resolution：$CurrentVerticalResolution"
+        Write-Host "Video Mode Description：$VideoModeDescription"
         Write-Host " "
     }
     else {
@@ -672,15 +647,15 @@ function check_disk_cpu_mem {
     }
     Write-Host "### Disk, CPU, memory, and system driver check completed`n"  -ForegroundColor Green
 }
+
 # Check the firewall status and whether specific port rules are open (initial functionality)
 # Check device security, recent upgrade patches, and scheduled tasks
-
 function check_fw {
 
     Write-Host " "
     Write-Host "### Checking device security, recent patch upgrades, scheduled tasks, certificate policies, and system core file access control ###`n" -ForegroundColor Cyan
 
-    Write-Host "--- Checking the status of Windows Defender Real-time Protection ---"  -ForegroundColor Yellow
+    Write-Host "--- Checking the status of Windows Defender Real-time ProtectionChecking the status of Windows Defender Real-time Protection ---"  -ForegroundColor Yellow
     Get-MpComputerStatus | Select-Object -Property RealTimeProtectionEnabled, AntivirusEnabled | Out-Host
 
     Write-Host "--- Checking if the firewall is enabled ---"  -ForegroundColor Yellow
@@ -712,6 +687,7 @@ function check_fw {
     # System-level HKLM
     $run_once_path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
     if ((-not (Test-Path $run_once_path)) -or ($null -eq (Get-ItemProperty -Path $run_once_path))) {
+        # Write-Warning "RunOnce property not found."
         Write-Host "No system-level one-time auto-start entries found`n" -ForegroundColor Green
     }
     else {
@@ -730,7 +706,7 @@ function check_fw {
     Write-Host "--- Checking for evaluation version automatic restart registry (Enterprise version) ---`n" -ForegroundColor Yellow
     if (Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WLMS") {
         $result = Get-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\WLMS"
-        Write-Host "Solution for Windows system automatically shutting down periodically:" -ForegroundColor Yellow -NoNewline
+        Write-Host "Solution for Windows system automatically shutting down periodically：" -ForegroundColor Yellow -NoNewline
         Write-Host "http://www.yvsy.com/501.html" -ForegroundColor Blue
         $result | Select-Object ImagePath, Start | Format-List
     } else {
@@ -748,6 +724,7 @@ function check_fw {
 
     Write-Host "`n--- Checking for disabled certificate checks ---`n" -ForegroundColor Yellow
 
+    # Get-ChildItem -Path 'Cert:\LocalMachine\Root' | Format-List *
     $result = Get-ChildItem -Path 'Cert:\LocalMachine\Disallowed' | Select-Object Subject, PSPath, NotBefore, NotAfter, Thumbprint
     if ($null -eq $result) {
         Write-Host "No disabled certificate checks found`n" -ForegroundColor Green
@@ -782,8 +759,7 @@ function check_share {
 
     Write-Host "--- Checking if the host has shared files with other computers using SMB ---`n" -ForegroundColor Yellow
 
-    # https://support.microsoft.com/en-gb/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf
-    Write-Host "SMB Service Check"
+    # https://support.microsoft.com/en-gb/windows/file-sharing-over-a-network-in-windows-b58704b2-f53a-4b82-7bc1-80f9994725bf    Write-Host "SMB服务检测"
     Get-Service | Where-Object { $_.Name -match 'LanmanServer' } | Out-Host
 
     $result = Get-SmbShare | Select-Object Name, Path, Description
@@ -791,7 +767,7 @@ function check_share {
         $result | Out-Host
     }
     else {
-        Write-Host "No shared files found. `n" -ForegroundColor Green
+        Write-Host "No shared files found.`n" -ForegroundColor Green
     }
 
     Write-Host "--- Checking if the host has an active FTP sharing service ---" -ForegroundColor Yellow
@@ -801,7 +777,7 @@ function check_share {
         $result | Out-Host
     }
     else {
-        Write-Host "`nNo active FTP service found. `n" -ForegroundColor Green
+        Write-Host "`nNo active FTP service found.`n" -ForegroundColor Green
     }
 
     Write-Host "--- Checking if Remote Desktop is enabled: 0 is enabled, 1 is disabled ---" -ForegroundColor Yellow
@@ -810,7 +786,7 @@ function check_share {
     # Remote Desktop Service
     Get-Service | Where-Object { $_.Name -match 'TermService' } | Out-Host
 
-    Write-Host "--- Checking for suspicious Remote Desktop (RDP) login behavior in the last month ---`n"  -ForegroundColor Yellow
+    Write-Host "--- Checking for Suspicious Remote Desktop (SRP) login behavior in the last month ---`n"  -ForegroundColor Yellow
     $result = Get-WinEvent -FilterHashtable @{
         LogName   = 'Security';
         ID        = 4624, 4625;
@@ -818,13 +794,12 @@ function check_share {
         Message   = '*Remote Desktop*'
     } -ErrorAction SilentlyContinue
     if ($result) {
-        $result | Out-GridView -Title "Suspicious Remote Desktop (RDP) Login Records"
+        $result | Out-GridView -Title "Suspicious Remote Desktop (SRP) Login Records"
     }
     else {
-        Write-Host "No suspicious Remote Desktop login behavior found in the last 30 days. `n" -ForegroundColor Green
+        Write-Host "No suspicious Remote Desktop login behavior found in the last 30 days.`n" -ForegroundColor Green
     }
-
-    Write-Host "### Share Resource Check (including: shared ports, shared files) is complete `n" -ForegroundColor Green
+    Write-Host "### Share Resource Check (including: shared ports, shared files) is complete`n" -ForegroundColor Green
 }
 
 # Event Query
@@ -842,7 +817,7 @@ function check_key_events {
     Get-LocalUser | Where-Object { $null -eq $_.Password } | Select-Object Name | Out-Host
 
     # New: Check the system sleep state independently
-    # Difference between Hibernate and Sleep: https://excalibra.github.io/2025/01-19/01#more
+    # Difference between Hibernate and Sleep: https://excalibra.github.io/2025/01-19/01
     Write-Host "--- Checking if sleep functionality is enabled. (AC Power: plugged in; DC Power: on battery) ---`n" -ForegroundColor Yellow
     Write-Host 'Note: For desktop PCs and virtual machines, you may ignore "lid close or open" information.' -ForegroundColor Green
 
@@ -862,7 +837,7 @@ function check_key_events {
     if ($result) {
         $result | Out-Host
         $sum = ($result | Measure-Object).Count
-        Write-Host "Total restarts: $sum times; Average restarts per day: $([math]::Round($sum / 14, 2)) times" -ForegroundColor Green
+        Write-Host "Total restarts:"$sum, "times$i; Average restarts per day:"$([math]::Round($sum / 14, 2)),"times" -ForegroundColor Green
 
         # Calculate daily restart count and find the highest
         $dateCounts = @{}
@@ -880,11 +855,11 @@ function check_key_events {
         # Find the maximum value
         $maxDate = ($dateCounts.GetEnumerator() | Sort-Object -Property Value -Descending | Select-Object -First 1).Name
         $maxCount = $dateCounts[$maxDate]
-        Write-Host "Date with most restarts: $maxDate, with $maxCount restarts" -ForegroundColor Cyan
+        Write-Host "Date with most restarts: $maxDate, and the number of restarts on that day: $maxCount" -ForegroundColor Cyan
 
     }
     else {
-        Write-Host "No restart data found for the last 14 days." -ForegroundColor DarkRed
+        Write-Host "No restart data found for the last 14 days."-ForegroundColor DarkRed
     }
 
     # Event ID 41 - Unexpected Shutdown, Event ID 6008 - Abnormal Shutdown
@@ -900,11 +875,11 @@ function check_key_events {
         $result | Out-Host
     }
     else {
-        Write-Host "No abnormal shutdowns or startups in the last 2 weeks." -ForegroundColor Green
+        Write-Host "No abnormal shutdowns or startups in the last 2 weeks.`n" -ForegroundColor Green
     }
 
     Write-Host "--- Checking for blue screens or crashes in the last 7 days ---`n"  -ForegroundColor Yellow
-
+    # https://social.microsoft.com/Forums/zh-CN/068ccdf2-96f4-484d-a5cb-df05f59e1959/win1020107202142659730475221202010720214id1000652921001?forum=window7betacn
     $result = Get-WinEvent -FilterHashtable @{
         LogName   = 'System'
         Id        = 1001 # Event ID 1001 corresponds to multiple LogNames, and each LogName has different levels for ID 1001.
@@ -915,22 +890,22 @@ function check_key_events {
         $result | Out-Host
     }
     else {
-        Write-Host "No blue screens or crashes in the last 7 days." -ForegroundColor Green
+        Write-Host "No blue screens or crashes in the last 7 days.`n" -ForegroundColor Green
     }
 
     shoudong_check
 
-    Write-Host "`n### Checking computer events such as sleep, shutdown/restart, and program crashes is complete ###`n" -ForegroundColor Green
+    Write-Host "`n### Checking computer events such as sleep, shutdown/restart, and program crashes is complete`n" -ForegroundColor Green
 }
 
 # Manual Input Check
-function shoudong_check {
+function shoudong_check{
 
     Write-Host "--- Enter a time period and check for abnormal warnings and error events relative to the current time ---`n"  -ForegroundColor Yellow
 
     do {
         # Get the user input for date and time
-        $dateTimeString = Read-Host "Please enter the date and time in the format yyyy-MM-dd HH:mm (e.g., 2023-06-09 13:01) or enter K to skip"
+        $dateTimeString = Read-Host "Please enter the date and time in the format yyyy-MM-dd HH:mm e.g., 2023-06-09 13:01 or enter K to skip"
 
         if ($dateTimeString -eq 'K' -or $dateTimeString -eq 'k') {
             Write-Host "Skipped." -ForegroundColor Yellow
@@ -966,11 +941,10 @@ function shoudong_check {
 }
 
 # Generate Baseline Report
-    Write-Host "### Generating 'Device Information', 'Event Summary', 'Activity Records', and 'Windows Defender Threat Overview' analysis reports ###" -ForegroundColor Cyan
-}
+function try_csv_xlsx {
 
     Write-Host " "
-    Write-Host "### Generating "Device Information", "Event Summary", "Activity Records", and "Windows Defender Threat Overview" analysis reports ###' -ForegroundColor Cyan; Write-Host " "
+    Write-Host '### Generating "Device Information"、"Event Summary"、"Activity Records"、and "Windows Defender Threat Overview" analysis reports ###' -ForegroundColor Cyan; Write-Host " "
 
     # Check if PowerShell version supports ImportExcel module
     if ($PSVersionTable.PSVersion.Major -lt 5) {
@@ -985,18 +959,20 @@ function shoudong_check {
         }
     }
     catch {
-        Write-Host "Failed to install the ImportExcel module. Please ensure your network is connected." -ForegroundColor Red
+        Write-Host "Failed to install the ImportExcel module$i; please ensure the network is functioning properly:" -ForegroundColor Red
         Write-Host $_.Exception.Message -ForegroundColor Red
         return
     }
 
+
     # Get the current user's Desktop directory path, more portable than ${env:username}/desktop
     $desktop_path = [Environment]::GetFolderPath('Desktop')
-    $report_path = Join-Path $desktop_path ((Get-Date).ToString('yyyy-MM-dd') + ' Baseline_Check_Report.xlsx')
+    $report_path = Join-Path $desktop_path ((Get-Date).ToString('yyyy-MM-dd') + 'Baseline_Check_Report.xlsx')
 
     Write-Host "`nDevice information and warning event summary are being generated. Please wait a few minutes... `n" -ForegroundColor Yellow
 
     # Device driver information
+    #  -ErrorAction SilentlyContinue
     $result = Get-PnpDevice | Select-Object `
         Class, FriendlyName, Problem, `
         Status, ConfigManagerUserConfig, SystemName, `
@@ -1007,12 +983,25 @@ function shoudong_check {
         Write-Host "Driver information summary completed" -ForegroundColor Green
     }
     else {
-        Write-Host 'No matching information found. Please check account permissions, event log settings, etc.' -ForegroundColor Red
+        Write-Host 'No matching information found. Please check account permissions, event log settings, etc.'
     }
 
-    Write-Host "`nGenerating important event statistics for the current day... Please wait." -ForegroundColor Yellow
-    # Filter events for the last 5 days and export them to Excel
-    Write-Host "`nGenerating important event statistics for the last 5 days. This may take a while...`n" -ForegroundColor Yellow
+    # Write-Host "`nGenerating statistics on important events for today up to this point...`n" -ForegroundColor Yellow
+    # # Event ID, see：https://github.com/Excalibra/scripts/blob/main/AQUICK/BITRH/Win10_Events_ID_useful.xlsx
+    # $result = Get-WinEvent -FilterHashtable @{
+    #     LogName   = 'Application', 'System', 'Security'
+    #     StartTime = (Get-Date).Date
+    # } | Where-Object { $_.LevelDisplayName -in "Error", "Warning", "Critical"
+    # } | Select-Object Message, Id, Level, ProviderName, LogName, `
+    #     TimeCreated, LevelDisplayName | Where-Object {
+    #     $_.LevelDisplayName -in "Error","Warning","Critical" `
+    #     -and $_.Id -notin 134, 1014, 8233, 10010, 10016, 6155 `
+    #     -or $_.Id -in 4648, 4634, 4199, 6013, 4803, 4802, 4800, 4801
+    # }
+
+    Write-Host "`nCurrently compiling important events from the past five days. This may take some time, so please be patient...`n" -ForegroundColor Yellow
+    # Event ID, see: https://github.com/Excalibra/scripts/blob/main/AQUICK/BITRH/Win10_Events_ID_useful.xlsx
+    # Subsequent reference: https://learn.microsoft.com/en-us/answers/questions/961608/event-id-6155-(the-lsa-package-is-not-signed-as-ex
 
     $elapsedTime = (Measure-Command {
         $result = Get-WinEvent -FilterHashtable @{
@@ -1020,15 +1009,15 @@ function shoudong_check {
         StartTime = (Get-Date).Date.AddDays(-5).AddHours(8.5)
         EndTime   = (Get-Date)
     } | Where-Object {
-        $_.LevelDisplayName -in "Error", "Critical"
+        $_.LevelDisplayName -in "Error","Critical"
     } | Select-Object Id, Level, ProviderName, LogName, `
         TimeCreated, LevelDisplayName, Message, @{Name="TaskDisplayName"; Expression={If($_.TaskDisplayName){$_.TaskDisplayName}else{'N/A'}}}
 
     if ($result) {
-        $result | Export-Excel -Path $report_path -WorksheetName 'Warning Event Summary'
+        $result | Export-Excel -Path $report_path -WorksheetName '预警事件汇总'
     }
     else {
-        Write-Host 'No "Warning", "Error", or "Critical" events found in the last five days. All is normal, so this report was not generated.' -ForegroundColor Green
+        Write-Host 'No “Warning”、“Error”、or “Critical” events found in the last five days. All is normal, so this report was not generated.' -ForegroundColor Green
     }
 }).TotalSeconds
 
@@ -1041,8 +1030,8 @@ function shoudong_check {
         StartTime = (Get-Date).Date.AddDays(-7)
     } | Where-Object {
         ($_.Id -in 4648, 4634)
-    } | Select-Object MachineName, Id, Level, ProviderName, LogName, `
-        TimeCreated, ContainerLog, LevelDisplayName, TaskDisplayName
+    } |Select-Object MachineName, Id, Level, ProviderName, LogName,  `
+    TimeCreated, ContainerLog, LevelDisplayName, TaskDisplayName
 
     if ($result) {
         $result | Export-Excel -Path $report_path -WorksheetName "Logon and Logoff Activity"
@@ -1058,7 +1047,7 @@ function shoudong_check {
 
     # Threat detection records for the past 30 days
     Write-Host " "
-    Write-Host 'Detecting stored threats and generating a monthly overview report (if no threats, this report will not be generated).' -ForegroundColor Yellow
+    Write-Host 'Detecting stored threats and generating a monthly overview report (if no threats, this report will not be generated)' -ForegroundColor Yellow
 
     $result = Get-MpThreatDetection `
     | Select-Object ActionSuccess, CurrentThreatExecutionStatusID, `
@@ -1069,25 +1058,26 @@ function shoudong_check {
         $result | Export-Excel -Path $report_path -WorksheetName "Threat Detection Records"
     }
     else {
-        Write-Host 'No threats detected. Possible reasons: third-party antivirus taking over or Windows Defender not enabled.' -ForegroundColor Magenta
+        Write-Host 'No threat events detected. Possible reasons: third-party antivirus software taking control, or Windows Defender is not enabled.' -ForegroundColor Magenta
     }
 
-# Threat categories in the last 30 days
-$result = Get-MpThreat `
+    # Threat categories in the last 30 days
+    $result = Get-MpThreat `
     | Select-Object CategoryID, DidThreatExecute, IsActive, RollupStatus, `
         SeverityID, ThreatID, ThreatName
 
-if ($result) {
-    $result | Export-Excel -Path $report_path -WorksheetName "Threat Category Details"
-}
-else {
-    Write-Host 'No threat events detected. Possible reasons: third-party antivirus took over, or Windows Defender is not enabled.' -ForegroundColor Magenta
+    if ($result) {
+        $result | Export-Excel -Path $report_path -WorksheetName "Threat Category Details"
+    }
+    else {
+        Write-Host 'No threat events detected. Possible reasons: third-party antivirus took over, or Windows Defender is not enabled.' -ForegroundColor Magenta
+    }
+
+    Write-Host " "
+    Write-Host '### Baseline check report has been generated. Please check the desktop location.' -ForegroundColor Green; Write-Host "`n"
+
 }
 
-Write-Host " "
-Write-Host '### Baseline check report has been generated. Please check the desktop location.' -ForegroundColor Green; Write-Host "`n"
-
-}
 
 # switch
 function select_option {
@@ -1102,7 +1092,7 @@ function select_option {
 
         # Virtual key codes and corresponding keyboard keys reference
         # https://learn.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes
-        $key = $host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown").VirtualKeyCode
+        $key = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown").VirtualKeyCode
 
         switch ($key) {
             { $_ -in 49, 97 } {
