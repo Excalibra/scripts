@@ -66,7 +66,7 @@ Linux baseline check (PR) can be found at: <a href="https://github.com/al0ne/Lin
 
 <ul>
 <li><a href="https://www.apple.com/business/docs/site/Mac_Deployment_Overview.pdf">Apple - Mac System Deployment</a></li>
-<li><a href="#">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
+<li><a href="https://excalibra.github.io/2025/01-22/01">vmware - Correct Approach to Purchasing Apple Devices for Enterprises</a></li>
 </ul>
 
 In the broader context, this article <a href="#">CSDN - Three Methods to Manage Mac Computers in Enterprises</a> mentions management strategies that are considered effective, but compared to Windows, they are still not sufficient.
