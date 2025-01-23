@@ -91,7 +91,7 @@ Main Involves:
 
 <ul>
 <li>Note【1】: <a href="#">Domain Controller IE Template Graphical Version</a></li>
-<li>Note【2】: Code Address: <a href="#">#</a></li>
+<li>Note【2】: Code Address: <a href="https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat">https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat</a></li>
 </ul>
 
 <p>Calculate IE compatible view website hex, one-click usage, need to convert to GB2312 encoding for local use.</p>
