@@ -94,10 +94,10 @@ Main Involves:
 <li>Note【2】: Code Address: <a href="https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat">https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat</a></li>
 </ul>
 
-<p>Calculate IE compatible view website hex, one-click usage, need to convert to GB2312 encoding for local use.</p>
+<p>Calculate IE compatible view website hex, one-click usage.</p>
 
 <pre><code>
-irm #|iex
+irm https://ghfast.top/https://github.com/Excalibra/scripts/blob/main/d-pwsh/clac_ie_clearablelistdata_hex.ps1|iex
 </code></pre>
 
 <p>One-click permanently disable Windows update settings <a href="#">Graphical Version</a></p>
@@ -126,7 +126,7 @@ irm #|iex
 
 <p>One-click install Flash and configure supported Chrome version 87</p>
 
-<pre><code>curl -OfsSL #&&call fxxk_chxxa.bat</code></pre>
+<pre><code>curl -OfsSL # </code></pre>
 
 <p>One-click block Chrome browser updates</p>
 
