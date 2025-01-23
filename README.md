@@ -90,7 +90,7 @@ Main Involves:
 <pre><code>curl -L  https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/keep_ie.bat|cmd</code></pre>
 
 <ul>
-<li>Note【1】: <a href="#">Domain Controller IE Template Graphical Version</a></li>
+<li>Note【1】: <a href="https://dev.to/excalibra/batch-processing-for-setting-ie-homepage-trusted-security-zones-compatibility-view-and-m1j">Domain Controller IE Template Graphical Version</a></li>
 <li>Note【2】: Code Address: <a href="https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat">https://github.com/Excalibra/scripts/blob/main/d-bat/ie-kanzen.bat</a></li>
 </ul>
 
