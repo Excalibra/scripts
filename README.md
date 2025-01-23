@@ -100,7 +100,7 @@ Main Involves:
 irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-pwsh/clac_ie_clearablelistdata_hex.ps1|iex
 </code></pre>
 
-<p>One-click permanently disable Windows update settings <a href="#">Graphical Version</a></p>
+<p>One-click permanently disable Windows update settings <a href="https://dev.to/excalibra/overview-of-creating-a-batch-file-to-disable-windows-updates-3ami">Graphical Version</a></p>
 
 <pre><code>curl -L  #|cmd</code></pre>
 
