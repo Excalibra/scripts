@@ -87,7 +87,7 @@ Main Involves:
 
 <p>Prevent Edge hijacking IE <a href="#">Graphical Version</a></p>
 
-<pre><code>curl -L  #|cmd</code></pre>
+<pre><code>curl -L  https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/keep_ie.bat|cmd</code></pre>
 
 <ul>
 <li>Note【1】: <a href="#">Domain Controller IE Template Graphical Version</a></li>
