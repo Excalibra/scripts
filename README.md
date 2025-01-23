@@ -97,7 +97,7 @@ Main Involves:
 <p>Calculate IE compatible view website hex, one-click usage.</p>
 
 <pre><code>
-irm https://ghfast.top/https://github.com/Excalibra/scripts/blob/main/d-pwsh/clac_ie_clearablelistdata_hex.ps1|iex
+irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-pwsh/clac_ie_clearablelistdata_hex.ps1|iex
 </code></pre>
 
 <p>One-click permanently disable Windows update settings <a href="#">Graphical Version</a></p>
