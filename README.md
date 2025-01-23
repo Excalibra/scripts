@@ -79,7 +79,7 @@ Main Involves:
 
 * IE, Windows Defender, Windows Update, Flash & Chrome v87, DingTalk silent installation, automatic printer installation
 * File checksum tools: MD5, SHA1, SHA256 hash calculation, comparison, verification tools.
-* C drive space cleanup: DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc. One-click cleanup script (C drive Thanos script).
+* C drive space cleanup: Application local cache, Windows.old, Windows upgrade logs, files, etc. One-click cleanup script (C drive Thanos script).
 * Basic skills required for job positions, IQ and EQ assessment, salary range summary, and demand analysis.
 
 <details>
