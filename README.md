@@ -102,7 +102,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click permanently disable Windows update settings <a href="https://dev.to/excalibra/overview-of-creating-a-batch-file-to-disable-windows-updates-3ami">Graphical Version</a></p>
 
-<pre><code>curl -L  #|cmd</code></pre>
+<pre><code>curl -L  https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/stop_update.bat|cmd</code></pre>
 
 <p>One-click restore disabled Windows update settings</p>
 
