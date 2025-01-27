@@ -18,6 +18,7 @@ Daily operation records of a domain administrator.
 Script Locations:
 
 * https://github.com/Excalibra/scripts/tree/main/d-python-dc
+* https://github.com/Excalibra/scripts/tree/main/d-pwsh-dc
 
      
 Illustrated Versions:
