@@ -34,7 +34,7 @@ foreach ($access in $acl.Access) {
         $ntfsUsers[$user] = "Read"
     }
     else {
-        Write-Output "Unmatched permission type: $permissions. Skipping shared permission settings for user $user."
+        Write-Output "Unmatched permission type: ${permissions}. Skipping shared permission settings for user ${user}."
     }
 }
 
@@ -62,13 +62,13 @@ try {
             try {
                 # Check if the user is in SID format (avoid errors due to lack of account names)
                 if ($user -match "^S-\d-\d+-(\d+-){1,14}\d+$") {
-                    Write-Output "Skipping SID-format user $user for shared permission settings."
+                    Write-Output "Skipping SID-format user ${user} for shared permission settings."
                 } else {
-                    Grant-SmbShareAccess -Name $shareName -AccountName $user -AccessRight $ntfsUsers[$user] -Force
-                    Write-Output "Shared permission set for user $user: $ntfsUsers[$user]"
+                    Grant-SmbShareAccess -Name $shareName -AccountName $user -AccessRight ${ntfsUsers[$user]} -Force
+                    Write-Output "Shared permission set for user ${user}: ${ntfsUsers[$user]}"
                 }
             } catch {
-                Write-Output "Error setting shared permissions for user $user (no mapping between account name and SID): $_"
+                Write-Output "Error setting shared permissions for user ${user} (no mapping between account name and SID): $_"
             }
         }
     }
@@ -82,7 +82,7 @@ try {
         $user = $access.IdentityReference.Value
         if (-not $ntfsUsers.ContainsKey($user) -and -not $exceptionList.Contains($user)) {
             $acl.RemoveAccessRule($access)
-            Write-Output "NTFS permission removed for user $user."
+            Write-Output "NTFS permission removed for user ${user}."
         }
     }
 
@@ -109,4 +109,3 @@ try {
 } catch {
     Write-Output "An error occurred while setting or updating NTFS permissions: $_"
 }
-
