@@ -119,7 +119,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click check if a program runs with administrator rights</p>
 
-<pre><code>curl -OfsSL#</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/nano_runas.bat&&call nano_runas.bat</code></pre>
 
 <p>One-click MD5, SHA1, SHA256 file verification tool</p>
 
