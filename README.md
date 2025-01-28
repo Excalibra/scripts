@@ -113,7 +113,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <pre><code>curl -OfsSL</code></pre>
 
-<p>C Drive Cleaner Script: One-click cleanup for local cache files from WeChat, Foxmail, Windows.old, Windows upgrade logs, and other files.</p>
+<p>C Drive Cleaner Script: One-click cleanup for local cache files from Foxmail, Windows.old, Windows upgrade logs, and other files.</p>
 
 <pre><code>curl -OfsSL #</code></pre>
 
