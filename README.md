@@ -115,7 +115,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>C Drive Cleaner Script: One-click cleanup for local cache files from Foxmail, Windows.old, Windows upgrade logs, and other files.</p>
 
-<pre><code>curl -OfsSL #</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/thanos.bat</code></pre>
 
 <p>One-click check if a program runs with administrator rights</p>
 
