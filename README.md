@@ -107,7 +107,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click restore disabled Windows update settings</p>
 
-<pre><code>curl -L  https://ghfast.top/https://github.com/Excalibra/scripts/blob/main/d-bat/re_update.bat|cmd</code></pre>
+<pre><code>curl -L  https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-bat/re_update.bat|cmd</code></pre>
 
 <p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="https://www.sordum.org/9480/defender-control-v2-1/">sordum.org/defender-control</a>)</p>
 
