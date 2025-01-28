@@ -109,7 +109,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <pre><code>curl -L  https://ghfast.top/https://github.com/Excalibra/scripts/blob/main/d-bat/re_update.bat|cmd</code></pre>
 
-<p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="#">sordum.org/defender-control</a>)</p>
+<p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="https://www.sordum.org/9480/defender-control-v2-1/">sordum.org/defender-control</a>)</p>
 
 <pre><code>curl -OfsSL #&&call choice_wdrt.bat</code></pre>
 
