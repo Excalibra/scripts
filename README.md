@@ -113,7 +113,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <pre><code>curl -OfsSL</code></pre>
 
-<p>C drive Thanos script: One-click cleanup of DingTalk, WeChat, Foxmail local cache, Windows.old, Windows upgrade logs, files, etc.</p>
+<p>C Drive Cleaner Script: One-click cleanup for local cache files from WeChat, Foxmail, Windows.old, Windows upgrade logs, and other files.</p>
 
 <pre><code>curl -OfsSL #</code></pre>
 
