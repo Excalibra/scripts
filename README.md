@@ -156,7 +156,7 @@ Cloud servers purchased from cloud service providers generally have no security 
 <details>
 <summary><b>Click for details</b></summary>
 
-<h3>One-click configuration for SSH login, user password policy, and Ban IP setup <a href="#">Image & Text Version</a></h3>
+<h3>One-click configuration for SSH login, user password policy, and Ban IP setup <a href="https://dev.to/excalibra/one-click-setup-for-ssh-login-password-policy-ip-ban-configuration-and-custom-admin-user-creation-4bd0">Image & Text Version</a></h3>
 
 <ul>
 <li>SSH Login: Key-based login without password, long heartbeat connection to prevent client disconnection</li>
