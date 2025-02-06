@@ -165,7 +165,7 @@ Cloud servers purchased from cloud service providers generally have no security 
 </ul>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/lite_ssh_n_ban.sh)"
 </code></pre>
 
 <p>SSH single configuration: One-click SSH fast configuration for SSH key login policy and simple password rules. (The single configuration part restricts access to only your IP, i.e., AllowUsers)</p>
