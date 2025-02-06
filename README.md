@@ -27,7 +27,7 @@ Illustrated Versions:
 * [DEV - 【PowerShell】Batch add permissions based on text content](https://dev.to/excalibra/powershell-batch-adding-related-permissions-based-on-text-content-5dbk)
 * [DEV - 【PowerShell】Convert NTFS folder security permissions to corresponding shared permissions (project)](https://dev.to/excalibra/powershell-convert-folder-security-permissions-to-corresponding-share-permissions-project-20f0)
 * [DEV - Check which shared folders a user has permissions for and remove those permissions](https://dev.to/excalibra/check-which-shared-folders-a-user-has-relevant-permissions-on-and-remove-those-permissions-d69)
-* [DEV - A simple domain account export script note (requires regex)](#)
+* [DEV - A simple script for exporting domain accounts (requires regex)](https://dev.to/excalibra/a-simple-script-for-exporting-domain-accounts-requires-regex-2od3)
 * [DEV - 【PowerShell】Domain user management, file authorization, organizational unit, and domain user restoration](#)
 
 </details>
