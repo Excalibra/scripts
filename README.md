@@ -171,13 +171,13 @@ sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/E
 <p>SSH single configuration: One-click SSH fast configuration for SSH key login policy and simple password rules. (The single configuration part restricts access to only your IP, i.e., AllowUsers)</p>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/simple_ssh.sh)"
 </code></pre>
 
 <p>fail2ban single configuration: One-click fail2ban setup, from download to installation, configuration generation, and service start. (You can refresh your public IP configuration with the single part.)</p>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/simple_ban.sh)"
 </code></pre>
 
 <h3>One-click to create a custom user with admin privileges <a href="#">Image & Text Version</a></h3>
