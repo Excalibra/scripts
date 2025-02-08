@@ -189,7 +189,7 @@ sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/E
 </ul>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/diy_add_wheel.sh)"
 </code></pre>
 
 <h3>One-click FTP setup <a href="#">Image & Text Version</a></h3>
