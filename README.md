@@ -192,7 +192,7 @@ sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/E
 sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/diy_add_wheel.sh)"
 </code></pre>
 
-<h3>One-click FTP setup <a href="#">Image & Text Version</a></h3>
+<h3>One-click FTP setup <a href="https://dev.to/excalibra/one-click-script-to-set-up-a-personal-ftp-on-a-linux-cloud-server-23fo">Image & Text Version</a></h3>
 
 <ul>
 <li>Shared directory: /var/ftp/share</li>
