@@ -209,7 +209,7 @@ sudo bash -c  "$(curl -fL #)"
 <p>Custom user version</p>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/heads/main/d-shell/lite_vsftpd.sh)"
 </code></pre>
 
 </details>
