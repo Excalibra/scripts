@@ -131,7 +131,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click block Chrome browser updates</p>
 
-<pre><code>curl -OfsSL #&&call deny_chrome_update.bat</code></pre>
+<pre><code>curl -OfsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/deny_chrome_update.bat&&call deny_chrome_update.bat</code></pre>
 
 <p>One-click PDF to PNG</p>
 
