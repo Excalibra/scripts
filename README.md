@@ -127,7 +127,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click install Flash and configure supported Chrome version 87</p>
 
-<pre><code>curl -OfsSL # </code></pre>
+<pre><code>curl -OfsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/87_and_flash.bat&&call 87_and_flash.bat</code></pre>
 
 <p>One-click block Chrome browser updates</p>
 
