@@ -139,7 +139,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click fix for shared printer 0x11b error</p>
 
-<pre><code>curl -OfsSL #&&call fix_0x11b_share_print.bat</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/fix_0x11b_share_print.bat&&call fix_0x11b_share_print.bat</code></pre>
 
 <p>One-click retrieve job position information and reference material websites</p>
 
