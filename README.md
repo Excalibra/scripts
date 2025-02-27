@@ -123,7 +123,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click MD5, SHA1, SHA256 file verification tool</p>
 
-<pre><code>curl -OfsSL #&&call md5tools.bat</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/md5tools.bat&&call md5tools.bat</code></pre>
 
 <p>One-click install Flash and configure supported Chrome version 87</p>
 
