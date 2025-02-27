@@ -127,15 +127,15 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click install Flash and configure supported Chrome version 87</p>
 
-<pre><code>curl -OfsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/87_and_flash.bat&&call 87_and_flash.bat</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/87_and_flash.bat&&call 87_and_flash.bat</code></pre>
 
 <p>One-click block Chrome browser updates</p>
 
-<pre><code>curl -OfsSL https://ghproxy.com/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/deny_chrome_update.bat&&call deny_chrome_update.bat</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/deny_chrome_update.bat&&call deny_chrome_update.bat</code></pre>
 
 <p>One-click PDF to PNG</p>
 
-<pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
+<pre><code>python3 -c "$(curl -fsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-python/PDFtoPNG.py)"</code></pre>
 
 <p>One-click fix for shared printer 0x11b error</p>
 
