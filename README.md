@@ -111,7 +111,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <p>One-click enable or disable Windows Defender real-time protection (discontinued, suggest using <a href="https://www.sordum.org/9480/defender-control-v2-1/">sordum.org/defender-control</a>)</p>
 
-<pre><code>curl -OfsSL</code></pre>
+<pre><code>curl -OfsSL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-bat/choice_wdrt.bat&&call choice_wdrt.bat</code></pre>
 
 <p>C Drive Cleaner Script: One-click cleanup for local cache files from Foxmail, Windows.old, Windows upgrade logs, and other files.</p>
 
