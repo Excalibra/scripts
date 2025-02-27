@@ -145,7 +145,7 @@ irm https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/refs/
 
 <pre><code>python3 -c "$(curl -fsSL #)"</code></pre>
 
-<p> Install specified Chrome and block updates: <a href="#"> only_install_chrome65.bat </a>; DingTalk silent install source code: <a href="#">dingding</a></p>
+<p> Install specified Chrome and block updates: <a href="#"> only_install_chrome65.bat </a></p>
 
 </details>
 
