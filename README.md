@@ -203,7 +203,7 @@ sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/E
 <p>No password version, username: ftpuser, password: P@ssw0rd</p>
 
 <pre><code>
-sudo bash -c  "$(curl -fL #)"
+sudo bash -c  "$(curl -fL https://ghfast.top/https://raw.githubusercontent.com/Excalibra/scripts/main/d-shell/simple_vsftpd.sh)"
 </code></pre>
 
 <p>Custom user version</p>
