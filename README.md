@@ -378,8 +378,7 @@ This section focuses on analyzing internet news media and network community orga
 
 <p>Therefore, the "Emperor Bar Expedition" can be seen as an activity of collective mobilization and public opinion guidance, where the joint forces of symbols, discourse, and emotion mobilize fans to participate and support, forming a polarized group action force. This action gives network violence a "nationalism" and "patriotism" legitimized image, making it widely accepted and supported within the group.</p>
 
-<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Empirical%20Study%20on%20the%20Motivations%20of%20Digital%20Natives%27%20Online%20Lurking.ipynb">Reading "Empirical Study on the Motives of Digital Natives' Online Lurking"</a></h4>
-
+<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Empirical%20Study%20on%20the%20Motivations%20of%20Digital%20Natives%27%20%28Users%29%20Online%20Lurking.ipynb">Reading "Empirical Study on the Motives of Digital Natives' Online Lurking"</a></h4>
 <h5>Research Purpose and Significance</h5>
 
 <p>Research Purpose (Micro):</p>
