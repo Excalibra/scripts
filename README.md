@@ -368,7 +368,7 @@ This section focuses on analyzing internet news media and network community orga
 
 <p>Liu Fang's definition of the "Little Pink" group is accurate. She further divides the group into different age ranges, social classes, and occupational backgrounds. Among those aged 18 to 24, the student group accounts for a large proportion of the "Little Pink," most of whom come from working-class families. However, prior to the popularity of the Old Bull Sail model, a significant number of "Little Pink" came from middle-class urban families, which also needs to be noted. In any case, both groups share a common characteristic: the "Little Pink" group has strong social consumption ability and purchasing power, bears relatively less social pressure, and is a beneficiary and witness to the increasing national power brought by China's reform and opening up.</p>
 
-<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Reading%20Research%20on%20Discourse%20Expression%20and%20Community%20Mobilization%20in%20the%20%27Diba%20Expedition%27%20Event.ipynb">Reading "Research on Discourse Expression and Community Mobilization in the 'Emperor Bar Expedition' Event"</a></h4>
+<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Discourse%20and%20Mobilization%20in%20Action%3A%20Reflections%20on%20the%20%27Diba%20Expedition.ipynb">Reading "Research on Discourse Expression and Community Mobilization in the 'Emperor Bar Expedition' Event"</a></h4>
 
 <h5>Emperor Bar Expedition: Group Mobilization and Public Opinion Guidance</h5>
 
@@ -427,7 +427,7 @@ Exploratory Analysis:
 
 <details> 
 <summary>Click for details</summary>
-<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/refs/heads/main/d-ipynb/Reading On the Reasons for the Decline of Marxism's Prestige.ipynb">Reading “On the Reasons for the Decline in the Prestige of Marxism”</a></h4> 
+<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Reading%20On%20the%20Reasons%20for%20the%20Decline%20of%20Marxism%27s%20Prestige.ipynb">Reading “On the Reasons for the Decline in the Prestige of Marxism”</a></h4> 
 
 <h5>Reasons for the decline in Marxism's prestige:</h5>
 
