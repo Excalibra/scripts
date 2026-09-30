@@ -347,7 +347,7 @@ This section focuses on analyzing internet news media and network community orga
 <details>
 <summary>Click for details</summary>
 
-<h4 id="h3view"><a href="#">Subculture Perspective Review and Bullet Screen Research</a></h4>
+<h4 id="h3view"><a href="https://nbviewer.org/github/Excalibra/scripts/blob/main/d-ipynb/Subculture%20Perspective%20Review%20and%20Bullet%20Screen%20Research.ipynb">Subculture Perspective Review and Bullet Screen Research</a></h4>
 
 <p>Overall, in the post-emotional era, I have come to realise that people's emotional experiences are diverse. Based solely on the interviewees' quotes regarding topics such as "romantic pairing fandoms" (commonly referred to as "shipping" — where fans enthusiastically support the idea of two characters, real or fictional, being in a romantic relationship) and "cute pets," it can be concluded that some interviewees hold simplistic, idealised views. This is unreliable and cannot be generalised. A more realistic perspective would suggest that some interviewees may not care about these topics, or they may not have given them much attention or a deeper understanding. Moreover, the data cannot provide definitive conclusions about the interviewees' emotions, thoughts, or behavioural logic; it merely points to certain connections. To uncover the truth and the underlying logic of these matters, further time and effort must be invested in research.</p>
 
